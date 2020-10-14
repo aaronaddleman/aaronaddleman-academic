@@ -3,7 +3,7 @@
 widget = "featurette"  # See https://sourcethemes.com/academic/docs/page-builder/
 headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
-weight = 30  # Order that this section will appear.
+weight = 50  # Order that this section will appear.
 
 title = "Skills"
 subtitle = ""
@@ -13,24 +13,49 @@ subtitle = ""
 # Add/remove as many `[[feature]]` blocks below as you like.
 # 
 # For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
+# Icons also come from: https://symbols.radicasoftware.com/97/brands-ta-th/45/terraform-icon
 
 [[feature]]
-  icon = "r-project"
+  icon = "python"
   icon_pack = "fab"
-  name = "R"
-  description = "90%"
+  name = "Python"
+  description = "40%"
   
 [[feature]]
-  icon = "chart-line"
-  icon_pack = "fas"
-  name = "Statistics"
-  description = "100%"  
+  icon = "Clojure_logo"
+  icon_pack = "custom"
+  name = "Clojure"
+  description = "10%"  
+
+[[feature]]
+  icon = "ruby-icon"
+  icon_pack = "custom"
+  name = "Ruby"
+  description = "70%"  
   
 [[feature]]
-  icon = "camera-retro"
-  icon_pack = "fas"
-  name = "Photography"
-  description = "10%"
+  icon = "terraform-icon"
+  icon_pack = "custom"
+  name = "Terraform"
+  description = "80%"
+
+[[feature]]
+  icon = "go-language-official"
+  icon_pack = "custom"
+  name = "GoLang"
+  description = "2%"
+
+[[feature]]
+  icon = "haskell-icon"
+  icon_pack = "custom"
+  name = "Haskell"
+  description = "0%"
+
+[[feature]]
+  icon = "chef-icon"
+  icon_pack = "custom"
+  name = "Chef"
+  description = "60%"
 
 # Uncomment to use emoji icons.
 # [[feature]]

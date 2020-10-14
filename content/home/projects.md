@@ -62,16 +62,16 @@ subtitle = ""
   
   # Background image.
   # image = "background.jpg"  # Name of image in `static/media/`.
-  # image_darken = 0.6  # Darken the image? Range 0-1 where 0 is transparent and 1 is opaque.
+   image_darken = 0.5  # Darken the image? Range 0-1 where 0 is transparent and 1 is opaque.
 
   # Text color (true=light or false=dark).
-  # text_color_light = true  
+  text_color_light = true  
   
 [advanced]
  # Custom CSS. 
- css_style = ""
+ css_style = "background-image: url('https://images.unsplash.com/photo-1602460367673-091b70ba104a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80')"
  
  # CSS class.
- css_class = ""
+ css_class = "bg-image parallax"
 +++
 
