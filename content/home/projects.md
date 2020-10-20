@@ -3,7 +3,7 @@
 widget = "portfolio"  # See https://sourcethemes.com/academic/docs/page-builder/
 headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
-weight = 65  # Order that this section will appear.
+weight = 20  # Order that this section will appear.
 
 title = "Projects"
 subtitle = ""
@@ -21,13 +21,17 @@ subtitle = ""
   # Default filter index (e.g. 0 corresponds to the first `[[filter_button]]` instance below).
   filter_default = 0
   
-  # [[content.filter_button]]
-  #   name = "All"
-  #   tag = "*"
+  [[content.filter_button]]
+    name = "All"
+    tag = "*"
   
-  # [[content.filter_button]]
-  #   name = "Deep Learning"
-  #   tag = "Deep Learning"
+  [[content.filter_button]]
+    name = "K8"
+    tag = "K8"
+
+  [[content.filter_button]]
+    name = "Monitoring"
+    tag = "Monitoring"
   
   # [[content.filter_button]]
   #   name = "Other"
@@ -69,9 +73,9 @@ subtitle = ""
   
 [advanced]
  # Custom CSS. 
- css_style = "background-image: url('https://images.unsplash.com/photo-1602460367673-091b70ba104a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80')"
+ #css_style = "background-image: url('https://images.unsplash.com/photo-1602460367673-091b70ba104a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80')"
  
  # CSS class.
- css_class = "bg-image parallax"
+ #css_class = "bg-image parallax"
 +++
 
