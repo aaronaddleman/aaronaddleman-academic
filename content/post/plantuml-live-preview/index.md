@@ -40,11 +40,16 @@ Once installed, you can open a Markdown file, and fill with code like the exampl
 
 ```plantuml
 @startuml
-state a <<choice>>
-[*] --> a : start
-a --> option1 : 1
-a --> option2 : 2
-option1 --> [*]
+start
+
+if (Plantuml installed?) then (yes)
+  :process all\ndiagrams;
+else (no)
+  :process only
+  __sequence__ and __activity__ diagrams;
+endif
+
+stop
 @enduml
 ```
 
@@ -52,7 +57,6 @@ option1 --> [*]
 
 Used for showing a stack of actions between end points. Below is a kitchen sink of everything I found for the sequence.
 
-1. notes to the left, center, right, and other styles/shapes
 2. dividers
 3. anchors, duration, and delays
 4. encompass
@@ -75,3 +79,5 @@ a --> b
 note left of a: this is a note
 </uml>
 
+
+## uml

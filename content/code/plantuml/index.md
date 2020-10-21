@@ -1,14 +1,14 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Plantuml Live Preview"
+title: "Plantuml"
 subtitle: ""
 summary: ""
 authors: []
 tags: []
 categories: []
-date: 2020-10-20T10:50:24-07:00
-lastmod: 2020-10-20T10:50:24-07:00
+date: 2020-10-21T08:51:47-07:00
+lastmod: 2020-10-21T08:51:47-07:00
 featured: false
 draft: false
 
