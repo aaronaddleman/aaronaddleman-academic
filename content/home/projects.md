@@ -21,17 +21,17 @@ subtitle = ""
   # Default filter index (e.g. 0 corresponds to the first `[[filter_button]]` instance below).
   filter_default = 0
   
-  [[content.filter_button]]
-    name = "All"
-    tag = "*"
+  ##[[content.filter_button]]
+  ##  name = "All"
+  ##  tag = "*"
   
-  [[content.filter_button]]
-    name = "K8"
-    tag = "K8"
+  ##[[content.filter_button]]
+  ##  name = "shell"
+  ##  tag = "shell"
 
-  [[content.filter_button]]
-    name = "Monitoring"
-    tag = "Monitoring"
+  ##[[content.filter_button]]
+  ##  name = "k8"
+  ##  tag = "k8"
   
   # [[content.filter_button]]
   #   name = "Other"

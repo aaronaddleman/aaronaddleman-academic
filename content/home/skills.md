@@ -57,6 +57,12 @@ subtitle = ""
   name = "Chef"
   description = "60%"
 
+[[feature]]
+  icon = "java-icon"
+  icon_pack = "custom"
+  name = "Java"
+  description = "0%"
+
 # Uncomment to use emoji icons.
 # [[feature]]
 #  icon = ":smile:"
