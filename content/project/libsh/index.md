@@ -5,7 +5,7 @@ title: "Libsh"
 subtitle: "Manage your shell environment so you can get on with coding."
 summary: "After you configure your shell environment, you will end up doing it again. End the loop and set it once."
 authors: []
-tags: []
+tags: ['shell']
 categories: []
 date: 2020-10-09T04:20:49-07:00
 lastmod: 2020-10-09T04:20:49-07:00
