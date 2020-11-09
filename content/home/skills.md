@@ -61,7 +61,13 @@ subtitle = ""
   icon = "java-icon"
   icon_pack = "custom"
   name = "Java"
-  description = "0%"
+  description = "2%"
+
+[[feature]]
+  icon = "spring-framework-icon"
+  icon_pack = "custom"
+  name = "Spring Framework"
+  description = "5%"
 
 # Uncomment to use emoji icons.
 # [[feature]]

@@ -3,7 +3,7 @@
 linktitle: Plantuml
 summary: Make diagrams from code
 weight: 1
-
+tags: ["graphs"]
 # Page metadata.
 title: Overview
 date: "2020-11-07T07:24"

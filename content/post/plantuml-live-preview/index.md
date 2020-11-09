@@ -25,7 +25,7 @@ image:
 #   Simply enter your project's folder or file name without extension.
 #   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
 #   Otherwise, set `projects = []`.
-projects: []
+projects: ["plantuml"]
 ---
 
 Creating graphs and flow charts or sequence diagrams can go a long way, but making them can be a pain. Instance feedback allows us to lower the resistance of making more diagrams. I offten visit [plantuml.com](plantuml.com) for suggestions and put up with the ads surrounding the examples.
