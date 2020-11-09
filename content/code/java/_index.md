@@ -7,16 +7,32 @@ title: Overview
 date: "2020-11-07T09:54:24Z"
 lastmod: "2020-11-07T09:54:24Z"
 draft: false  # Is this a draft? true/false
-toc: true  # Show table of contents? true/false
+toc: false  # Show table of contents? true/false
 type: docs  # Do not modify.
 
 menu:
-  makefile:
+  java:
     name: Java
     weight: 1
 ---
 
-## Setup the IDE
+## the summary
 
-I chose the editor of VSCode. Feel like I have gotten pretty used to its workflow and Java, so far, is easy to setup.
-Microsoft has done a good job of [getting VSCode onfigured for Java including installing Java](https://code.visualstudio.com/docs/languages/java)
+This book is all about my investigation with the Java language.
+Content will change and topics might move around I as gain deeper
+understanding. But really, I am just diagnosing of error messages.
+
+TODO: Move this content to a sub topic
+
+The following defines the database connection for the SpringBoot App
+
+`src/main/resources/application.properties`
+
+```shell
+spring.datasource.url=jdbc:postgresql://localhost:5432/conference_app
+spring.datasource.username=postgres
+spring.datasource.password=welcome
+spring.jpa.database-platform=org.hibernate.dialect.PostgreSQLDialect
+spring.jpa.hibernate.ddl-auto=none
+spring.jpa.hibernate.show-sql=true
+```

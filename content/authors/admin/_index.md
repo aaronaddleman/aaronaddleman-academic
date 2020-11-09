@@ -16,8 +16,9 @@ role: Principal Automation Engineer
 bio: Fun with programming and infrastructure
 
 interests:
-- Math
 - Automation
+- Proof of Concepts
+- Math
 - New programming langauges
 
 # Social/Academic Networking
