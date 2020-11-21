@@ -5,7 +5,7 @@ title: "Libsh"
 subtitle: "Manage your shell environment so you can get on with coding."
 summary: "After you configure your shell environment, you will end up doing it again. End the loop and set it once."
 authors: []
-tags: ['shell']
+tags: ['cli']
 categories: []
 date: 2020-10-09T04:20:49-07:00
 lastmod: 2020-10-09T04:20:49-07:00
@@ -28,8 +28,16 @@ image:
 projects: []
 ---
 
-Et officia do excepteur in mollit ad. Duis in enim aute non do culpa eiusmod incididunt consectetur. Lorem consequat pariatur magna ex amet nostrud quis commodo incididunt.
+Over the years of working with Linux, I have found myself always trying to recall how to install something, or do
+an action, or setting just the correct environment variables in a certain file. After a while, I got tired and
+decided to start collecting small functions to this for me. ZSH also helped in allowing to use the TAB button
+for doing auto-complete of functions and variables.
 
-Nostrud ea incididunt exercitation nulla adipisicing id consectetur sit veniam fugiat irure velit. Qui incididunt excepteur id est cupidatat anim voluptate aute reprehenderit laboris laboris. Nostrud sint sit consectetur laborum ullamco sit laborum sunt sunt. Irure culpa eu nulla eu non ea sit nisi laboris. Laborum laboris quis elit excepteur sunt incididunt officia. Do occaecat occaecat irure eu consectetur eiusmod anim dolor cillum consectetur. Deserunt amet sit sunt nulla est eiusmod magna ullamco pariatur et magna sit excepteur mollit.
+1. sorting of features
+2. documenting of command examples
+3. refreshing due to drift
+4. validating environments
+5. supporting personal and professional environments
+6. getting in front of the prompt for annoucements
 
-Proident ut Lorem id voluptate ad irure proident Lorem ut incididunt qui laborum cillum. Elit laboris consequat reprehenderit nulla. Consequat non minim officia culpa veniam nisi quis. Pariatur aliquip ut aliqua nisi. Nostrud commodo ex cillum non commodo excepteur est quis. Nostrud eu anim exercitation qui Lorem Lorem. Aliqua nisi quis dolor voluptate nostrud mollit ex ad ullamco ullamco est tempor consequat labore.
+

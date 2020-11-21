@@ -1,6 +1,6 @@
 ---
 title: Terms
-date: "2018-06-28T00:00:00+01:00"
+date: "2020-11-07T03:29"
 draft: false
 share: false
 commentable: false

@@ -3,6 +3,7 @@ title: Kitchen Sink
 linktitle: Kitchen Sink
 toc: true
 type: docs
+tags: ["graphs"]
 date: "2020-11-07T07:28:00Z"
 draft: false
 menu:

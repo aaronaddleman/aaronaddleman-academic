@@ -16,9 +16,26 @@ weight: 1
 
 ## overview
 
-Est exercitation non id duis nisi ex nulla duis exercitation occaecat dolore. Nulla consectetur mollit cupidatat pariatur ut. Velit ea in sint consequat magna. Quis sint labore commodo quis laboris deserunt. Pariatur ut et ipsum veniam est officia exercitation elit eiusmod anim ea duis velit incididunt. Proident commodo tempor voluptate anim nisi ut. Cupidatat occaecat anim qui ipsum.
+Almost everyone I talk to eventually says:
 
-Dolore ad ipsum sunt sunt cupidatat ex sit. Ea velit in esse pariatur irure irure pariatur ullamco anim labore duis nulla. Sit ea nulla officia pariatur officia et ut duis sint ea. Nostrud ullamco esse deserunt eu nisi reprehenderit do. Deserunt voluptate duis deserunt ut laboris officia. Veniam sit eu cupidatat incididunt. Voluptate nisi cupidatat officia ea.
+> Can you write a help cmd for it?
+
+So, after searching the internet and trying some options, I have
+arrived at this boiler plate for my Makefiles. The setup is easy
+where you define the help method and for any method you want to
+provide some short description of how to use just add the following
+
+```makefile
+coolfn: ## help string here
+```
+
+The result is allowing the consumer of this Makefile to run a help
+command and all of the functions you marked with `## some text` will
+be listed for their enjoyment of reading. 
+
+## example
+
+Here is a full example of a Makefile with this method applied:
 
 ```makefile
 #

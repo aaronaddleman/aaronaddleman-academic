@@ -69,6 +69,14 @@ subtitle = ""
   name = "Spring Framework"
   description = "5%"
 
+[[feature]]
+  icon = "kubernetes-icon"
+  icon_pack = "custom"
+  name = "Kubernetes"
+  description = "30%"
+
+
+
 # Uncomment to use emoji icons.
 # [[feature]]
 #  icon = ":smile:"
