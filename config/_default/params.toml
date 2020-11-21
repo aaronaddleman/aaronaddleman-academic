@@ -199,9 +199,9 @@ plugins_js  = ["plantuml-encoder.min", "plantuml.script"]
   #   2: Compact
   #   3: Card
   #   4: Citation (publications only)
-  post_view = 2
-  publication_view = 2
-  talk_view = 2
+  post_view = 3
+  publication_view = 3
+  talk_view = 3
 
 ############################
 ## Comments
@@ -270,7 +270,7 @@ plugins_js  = ["plantuml-encoder.min", "plantuml.script"]
 ## Marketing
 ############################
 [marketing]
-  google_analytics = ""
+  google_analytics = "UA-31631239-1"
   google_tag_manager = ""
 
 ############################

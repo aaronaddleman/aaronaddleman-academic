@@ -38,6 +38,27 @@ for doing auto-complete of functions and variables.
 3. refreshing due to drift
 4. validating environments
 5. supporting personal and professional environments
-6. getting in front of the prompt for annoucements
 
+## sorting of features
 
+All commands are sorted by their common prefix. This allows for the project to have their own buckets of commands and keep some basic sort of grouping.
+
+## documenting
+
+Each command also serves as a documenation on how to use the service. Take using the aws command. For any one of them you may type in the command `type -f aws_blah` and you will be able to see what that function is doing or by using `the_command --help` for most commands I have documented.
+
+## refreshing
+
+There is a feature for checking the last known git clone date. This allows for detecting the desired max amount of drift before asking the customer if they want to refresh the git repo.
+
+## validation
+
+I have been using the pattern of a `pre` command where needed to validate the dependencies of the command. One example of this is with Vault where the function of `vault_pre` will try to test the connection to the `VAULT_ADDR`.
+
+## personal vs professional
+
+Libsh will load all files in `$HOME/.sh.d/*.fn.sh` and `$HOME/.sh.d/*.env.sh` which allows for customizing your own functions that you require for either personal or professional environments.
+
+## github
+
+If your interested in using this project, head on over to [libsh's github home](https://github.com/aaronaddleman/libsh) where more documentation is updated on a change basis.
