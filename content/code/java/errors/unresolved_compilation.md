@@ -23,9 +23,7 @@ TLDR;
 
 List of errors I have found along my Java journeys.
 
-## Error 1
-
-### Error
+## Error
 
 ```java
 org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionRepository' defined in com.pluralsight.conferencedemo.repositories.SessionRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaMappingContext' while setting bean property 'mappingContext'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not get constructor for org.hibernate.persister.entity.SingleTableEntityPersister
