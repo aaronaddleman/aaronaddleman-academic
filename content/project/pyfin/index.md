@@ -27,3 +27,7 @@ image:
 #   Otherwise, set `projects = []`.
 projects: []
 ---
+
+Always wanted to learn bout economics, statisics, math, and finance. So I thought what better way than to build a tool to read the stockmarket. Maybe some day it will allow me to execute trades.
+
+[PyFin](https://github.com/aaronaddleman/pyfin) lives on github.com and as I dedicate time to its development, I would like to track some of its progress on this site for searching and sharing.
