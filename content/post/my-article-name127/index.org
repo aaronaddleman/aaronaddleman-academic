@@ -2,6 +2,7 @@
 #+summary: Take back blog power with OrgMode in Emacs
 #+subtitle: emacs everywhere
 #+date: 2019-08-02
+#+draft: true
 #+tags[]: howto
 
 * this is new
