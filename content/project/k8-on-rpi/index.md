@@ -38,16 +38,15 @@ Cool things about K8 on the RPi
 - 4 x Raspberry Pi ver 4 B
 - 4 x SD cards
 - 4 x Power over Ethernet Hats
-- 1 x Power over Ethernet Hub
 - 4 x Short Ethernet Cable
+- 1 x Power over Ethernet Hub
 - 1 x Cluster kit hardware to stack Pi's
 - 1 x Micro HDMI to regular HDMI
 
 ## the discoveries
 
-Very quickly, I found out that every experiment of iterating with Ansible to configure the Pi's resulted in re-imaging of Ubuntu Server. This got old really really quick and I tried to use CloneZilla to clone the SD cards as best as I could. If you have a really good SD card reader(s) for doing multiple writes, then I think you will be well advisided to invest a little bit of time or money into writing to multiple SD cards.
+Very quickly, I found out that every experiment of iterating with Ansible to configure the Pi's resulted in re-imaging of Raspbian OS Server. This got old really really quick and I tried to use CloneZilla to clone the SD cards as best as I could. If you have a really good SD card reader(s) for doing multiple writes, then I think you will be well advisided to invest a little bit of time or money into writing to multiple SD cards.
 
-My method for running CloneZilla did work but only after multiple attempts of failure.
 
 ## from 0 to 100
 
