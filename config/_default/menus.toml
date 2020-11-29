@@ -30,8 +30,8 @@
 
 
 [[main]]
-  name = "Terms"
-  url = "terms/"
+  name = "Keys"
+  url = "keys/"
   weight = 50
 
 
