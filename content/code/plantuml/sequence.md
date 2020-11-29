@@ -3,7 +3,7 @@ title: Sequence
 linktitle: Sequence
 toc: true
 type: docs
-tags: ["graphs"]
+tags: []
 date: "2020-11-07T07:28:00Z"
 draft: false
 menu:
