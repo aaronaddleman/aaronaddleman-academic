@@ -63,14 +63,14 @@ Experimented with a couple of different PoE hats, but landed on the one by Raspb
 
 As for the PoE switch, I dont think my choice was a good one. The software on the switch was nice, but seemed really old. But it delivers the amount of power I need for the 4 SBCs. Going with a 8 Port switch was also a good idea because of the following port mapping:
 
-Port 1: pi 1
-Port 2: pi 2
-Port 3: pi 3
-Port 4: pi 4
-Port 5: (future)
-Port 6: (future)
-Port 7: Phililps Hue
-Port 8: Uplink
+- Port 1: pi 1
+- Port 2: pi 2
+- Port 3: pi 3
+- Port 4: pi 4
+- Port 5: (future)
+- Port 6: (future)
+- Port 7: Phililps Hue
+- Port 8: Uplink
 
 As you can see I really filled up the ports and can always add a couple more if I see the need.
 
