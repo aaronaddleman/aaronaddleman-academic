@@ -32,8 +32,3 @@ While I was looking for an image to pair with this project, I found out Promethe
 But... running Prometheus on the K8 was not the easiest. I cobbled many projects together and filled in my own touches to finish the job.
 
 [rak8-metrics](https://github.com/aaronaddleman/rak8-metrics) holds all of the files I used for bringing up Prometheus on a K8 cluster running on the Raspberry Pi.
-
-## todo list
-
-- [ ] Move the docker images to be built by your own Dockerfiles
-- [ ] Run the services without using port forwarding
