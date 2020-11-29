@@ -82,12 +82,6 @@ Once I got the first _pi 1_ hooked up to the network, I assigned it a static IP 
 
 I then went on to configure the other PIs to have static IP addresses. It really helps to have these in sequential order. Just makes things super simple. I choose the following number convention:
 
-### networking
-
-All of my networking or routing was done with [rak8s-metallb](https://github.com/aaronaddleman/rak8s-metallb) which involves updating the configuration yaml file with your reserved IP address pool.
-
-more on this below...
-
 ### setup
 
 Downloaded the [Raspian OS Arm 64bit](https://downloads.raspberrypi.org/raspios_arm64/images/) version as Kubernetes needs this for operation. The steps you want to complete on the raspian os, they are as follows:
@@ -371,6 +365,10 @@ node-1   Ready    <none>   8h    v1.17.0
 node-2   Ready    <none>   8h    v1.17.0
 node-3   Ready    <none>   8h    v1.17.0
 ```
+
+### networking
+
+All of my networking or routing was done with [rak8s-metallb](https://github.com/aaronaddleman/rak8s-metallb) which involves updating the configuration yaml file with your reserved IP address pool. The instructions for installing `metallb` are in the README.md and assume you have `kubectl` configured. Make sure you update the `config.yaml` file with the ip addresses of your nodes.
 
 ### shutdown (if you want to)
 
