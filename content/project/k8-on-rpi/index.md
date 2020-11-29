@@ -90,7 +90,7 @@ more on this below...
 
 ### setup
 
-Downloaded the [Rapian OS Arm 64bit](https://downloads.raspberrypi.org/raspios_arm64/images/) version as Kubernetes needs this for operation. The steps you want to complete on the raspian os, they are as follows:
+Downloaded the [Raspian OS Arm 64bit](https://downloads.raspberrypi.org/raspios_arm64/images/) version as Kubernetes needs this for operation. The steps you want to complete on the raspian os, they are as follows:
 
 1. install ssh key
 2. set ssh to start on boot
