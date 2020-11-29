@@ -30,8 +30,8 @@
 
 
 [[main]]
-  name = "Keys"
-  url = "keys/"
+  name = "Gpg Key"
+  url = "keys/aaronaddleman.gpg.txt"
   weight = 50
 
 
