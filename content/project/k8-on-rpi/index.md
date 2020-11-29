@@ -78,20 +78,19 @@ I really like the short ethernet cable. This makes the package nice and neat and
 
 ### configure the home network
 
-Once I got the _pi 1_ hooked up to the network, I assigned it a static IP address with my wifi network. This is important because K8 needs known hosts to be registered. I have a feeling this could be delt better with a real K8 cluster, but this is a Raspberry Pi cluster and by no means should be treated with production level expectations.
+Once I got the first _pi 1_ hooked up to the network, I assigned it a static IP address with my wifi network. This is important because K8 needs known hosts to be registered. I have a feeling this could be delt better with a real K8 cluster, but this is a Raspberry Pi cluster and by no means should be treated with production level expectations.
 
 I then went on to configure the other PIs to have static IP addresses. It really helps to have these in sequential order. Just makes things super simple. I choose the following number convention:
 
-
 ### networking
 
-All of my networking or routing was done with (rak8s-metallb)[https://github.com/aaronaddleman/rak8s-metallb] which involves updating the configuration yaml file with your reserved IP address pool.
+All of my networking or routing was done with [rak8s-metallb](https://github.com/aaronaddleman/rak8s-metallb) which involves updating the configuration yaml file with your reserved IP address pool.
 
 more on this below...
 
 ### setup
 
-Downloaded the [Rapian OS Arm 64bit](https://downloads.raspberrypi.org/raspios_arm64/images/) version as Kubernetes needs this for operation. I also installed `virtualbox` by using the command `brew install virtualbox`. I am going to use this to allow cloning of your SD cards after you have done some manual preparation and set the time zone and password for the `pi` user:
+Downloaded the [Rapian OS Arm 64bit](https://downloads.raspberrypi.org/raspios_arm64/images/) version as Kubernetes needs this for operation. The steps you want to complete on the raspian os, they are as follows:
 
 1. install ssh key
 2. set ssh to start on boot
@@ -101,6 +100,10 @@ Downloaded the [Rapian OS Arm 64bit](https://downloads.raspberrypi.org/raspios_a
 # you know, the one that is not the raspberry pi
 #
 # generate a private key
+#
+# when prompted of where you want to store the file,
+# I used /Users/my_username/.ssh/k8_id_rsa which
+# makes two files: k8_id_rsa, and k8_id_rsa.pub
 ssh-key-gen
 #
 # now copy the key to the raspberry pi
@@ -123,7 +126,7 @@ After your all done with ssh work, lets move on to setting the raspberry pi ssh 
 
 ### cloning
 
-This step is for closing the SD cards to the other 3 Raspberry Pis. Now that we have our SSH key to connect to each one, we are ready to boot up each node and have them ready to recevie further configuration. To clone the SD cards, I found two options:
+This step is for closing the SD cards to the other 3 Raspberry Pis. Now that we have our SSH key to connect to each one, we are ready to boot up each node and have them ready to recevie further configuration. After you are done with all of the changes you are ready to clone the SD cards, I tried using VirtualBox, but after some painful hours of trying to attach my SD card reader and having 0 success, I found two options:
 
 1. use the tool `dd` which is pretty slow and works
 2. or use `CloneZilla` which required me to pay a subscription for Parallels Desktop (about \$49.99 for 1 year)
