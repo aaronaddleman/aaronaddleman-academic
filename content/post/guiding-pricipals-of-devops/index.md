@@ -48,7 +48,7 @@ After you have written code, your going to read it over, and over ... and over a
 As your changes stack up, your number times you read the code increases way beyond the number of changes.
 This is what I mean by you read more code than you write code.
 
-### read logs more than read
+### read logs more than read code
 
 ```mermaid
 graph LR
@@ -60,7 +60,7 @@ Most likely you have also executed your code and tried to understand what it has
 Usually, we all make logs to understand what our code has done.
 By keeping your logs in a clean and meaningfull format, you help out the first rule of _reading more than you write_ by understanding where your log event exists within your code.
 
-### read time more than read code
+### read time more than read logs
 
 ```mermaid
 graph LR
