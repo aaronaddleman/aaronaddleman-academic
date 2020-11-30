@@ -81,6 +81,13 @@ Once I got the first _pi 1_ hooked up to the network, I assigned it a static IP 
 
 I then went on to configure the other PIs to have static IP addresses. It really helps to have these in sequential order. Just makes things super simple. I choose the following number convention:
 
+| last ip octet | hostname | role    |
+| ------------- | -------- | ------- |
+| .70           | node-0   | manager |
+| .71           | node-1   | node    |
+| .72           | node-2   | node    |
+| .73           | node-4   | node    |
+
 ### setup
 
 Downloaded the [Raspian OS Arm 64bit](https://downloads.raspberrypi.org/raspios_arm64/images/) version as Kubernetes needs this for operation. The steps you want to complete on the raspian os, they are as follows:
