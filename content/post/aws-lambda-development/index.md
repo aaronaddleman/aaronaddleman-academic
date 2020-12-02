@@ -16,6 +16,7 @@ draft: true
 # To use, add an image named `featured.jpg/png` to your page's folder.
 # Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
 image:
+  placement: 3
   caption: ""
   focal_point: ""
   preview_only: false
@@ -41,34 +42,34 @@ def lambda_handler(event, context):
 
 if __name__ == "__main__":
     event = { "Records":
-                [  
-                {  
+                [
+                {
                     "eventVersion":"2.2",
                     "eventSource":"aws:s3",
                     "awsRegion":"us-west-2",
                     "eventTime":"1970-01-01T00:00:00.000Z",
                     "eventName":"event-type",
-                    "userIdentity":{             
+                    "userIdentity":{
                         "principalId":"Amazon-customer-ID-of-the-user-who-caused-the-event"
                     },
-                    "requestParameters":{  
+                    "requestParameters":{
                         "sourceIPAddress":"ip-address-where-request-came-from"
                     },
-                    "responseElements":{  
+                    "responseElements":{
                         "x-amz-request-id":"Amazon S3 generated request ID",
                         "x-amz-id-2":"Amazon S3 host that processed the request"
                     },
-                    "s3":{  
+                    "s3":{
                         "s3SchemaVersion":"1.0",
                         "configurationId":"ID found in the bucket notification configuration",
-                        "bucket":{  
+                        "bucket":{
                             "name":"bucket-name",
-                            "ownerIdentity":{  
+                            "ownerIdentity":{
                                 "principalId":"Amazon-customer-ID-of-the-bucket-owner"
                             },
                             "arn":"bucket-ARN"
                         },
-                        "object":{  
+                        "object":{
                             "key":"object-key",
                             "size":10,
                             "eTag":"object eTag",

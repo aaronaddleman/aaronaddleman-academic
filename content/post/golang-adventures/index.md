@@ -16,6 +16,7 @@ draft: false
 # To use, add an image named `featured.jpg/png` to your page's folder.
 # Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
 image:
+  placement: 3
   caption: ""
   focal_point: ""
   preview_only: false
@@ -63,7 +64,7 @@ go get -u -v github.com/alecthomas/gometalinter
 gometalinter --install --update
 ```
 
-Add stuff to your .spacemacs file for customization in your layers 
+Add stuff to your .spacemacs file for customization in your layers
 
 ```lisp
    dotspacemacs-configuration-layers
@@ -72,7 +73,7 @@ Add stuff to your .spacemacs file for customization in your layers
      python
      go
      (go :variables go-use-gometalinter t
-                    go-tab-width 2  
+                    go-tab-width 2
      )
    )
 ```
