@@ -79,7 +79,7 @@ wget -O - https://raw.githubusercontent.com/OpenMediaVault-Plugin-Developers/ins
 7. create a new shared folder for your purposes
 8. navigte to `NFS`
 9. create a new share folder
-   1.  set the CIDR allow list to your network (mine was 192.168.86.0/24 for all host of my network[^1])
+   1. set the CIDR allow list to your network (mine was 192.168.86.0/24 for all host of my network[^1])
 
 ## Issues
 

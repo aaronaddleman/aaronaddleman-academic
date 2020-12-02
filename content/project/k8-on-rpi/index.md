@@ -86,7 +86,7 @@ I then went on to configure the other PIs to have static IP addresses. It really
 | .70           | node-0   | manager |
 | .71           | node-1   | node    |
 | .72           | node-2   | node    |
-| .73           | node-4   | node    |
+| .73           | node-3   | node    |
 
 ### setup
 
@@ -155,7 +155,7 @@ dd if=/path/to/file.img of=/dev/rdisk#
 
 Now its on to the best part. Running the automation to configure your Master and Node for Kubernetes. Here are my shell steps:
 
-```bash
+```bash {linenos=table,hl_lines=[3],linenostart=1}
 git clone https://github.com/aaronaddleman/rak8s/tree/master
 cd rak8s
 pip install ansible
@@ -168,7 +168,7 @@ ansible-playbook cluster.yml
 Here is an output of my ansible run:
 
 ```shell
-➜ ansible-playbook cluster.yml                                                                              
+➜ ansible-playbook cluster.yml
 
 PLAY [all] ************************************************************************************************************************************************
 
@@ -338,10 +338,10 @@ changed: [node-2]
 changed: [node-3]
 
 PLAY RECAP ************************************************************************************************************************************************
-node-0                     : ok=26   changed=21   unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
-node-1                     : ok=22   changed=17   unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
-node-2                     : ok=22   changed=17   unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
-node-3                     : ok=22   changed=17   unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+node-0                     : ok=26   changed=21   unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
+node-1                     : ok=22   changed=17   unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
+node-2                     : ok=22   changed=17   unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
+node-3                     : ok=22   changed=17   unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
 ```
 
 ### configure kubectl
