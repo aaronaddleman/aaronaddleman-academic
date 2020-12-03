@@ -271,7 +271,7 @@ plugins_js  = ["plantuml-encoder.min", "plantuml.script"]
 ############################
 [marketing]
   google_analytics = "UA-31631239-1"
-  google_tag_manager = "G-5BG610NQEN"
+  google_tag_manager = "UA-31631239-1"
 
 ############################
 ## Content Management System
