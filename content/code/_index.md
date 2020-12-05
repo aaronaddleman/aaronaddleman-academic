@@ -10,4 +10,4 @@ header:
 
 There are tons of data for code. As I walk through time and learn about the ups and downs to
 asking computers what to do, these are my notes and suggestions that I found useful along
-the way.
+the way. Content will be updated as I learn more or get bored of other responsibilties.
