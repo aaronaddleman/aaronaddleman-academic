@@ -90,6 +90,20 @@ read_code --> write_code[write the code]
 is_friday -->|yes| stop[dont deploy, you want your weekend]
 ```
 
+## pipelines
+
+When building pipelines, I notice many issues crop up when the project starts to put tons of logic into the CI/CD script and not into a tool.
+This causes the jobs to be com brittle and will easily break or become
+out dated fast. Espectially when treating the job in CI/CD with different Git branches. This pattern is absolutly horible because
+now the changes to the branch have to receive updates from other
+branches and causes a merging nightmare of timelines within git.
+
+Best patterns are to make a tool that is external to the pipeline.
+I really like the idea of GoLang to do the heavly lifting as this tool
+could also run locally and has a better chance of being cross-complied.
+You could go the container route as well. I dont really care, but just
+not the CI/CD language itself or individual git branches.
+
 ## backups
 
 Unless you restore from your backup source, it does not exist.
