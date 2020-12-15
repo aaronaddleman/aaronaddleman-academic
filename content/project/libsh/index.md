@@ -28,6 +28,12 @@ image:
 projects: []
 ---
 
+## github
+
+Code lives in [libsh's github home](https://github.com/aaronaddleman/libsh) and more documentation is updated on a change basis.
+
+## history
+
 Over the years of working with Linux, I have found myself always trying to recall how to install something, or do
 an action, or setting just the correct environment variables in a certain file. After a while, I got tired and
 decided to start collecting small functions to this for me. ZSH also helped in allowing to use the TAB button
@@ -58,7 +64,3 @@ I have been using the pattern of a `pre` command where needed to validate the de
 ## personal vs professional
 
 Libsh will load all files in `$HOME/.sh.d/*.fn.sh` and `$HOME/.sh.d/*.env.sh` which allows for customizing your own functions that you require for either personal or professional environments.
-
-## github
-
-If your interested in using this project, head on over to [libsh's github home](https://github.com/aaronaddleman/libsh) where more documentation is updated on a change basis.
