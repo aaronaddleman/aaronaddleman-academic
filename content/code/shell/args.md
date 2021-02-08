@@ -51,7 +51,7 @@ MESSAGE=
 VERBOSE=
 TEST=
 
-while getopts "h a:u:f:m:x:v:t" OPTION
+while getopts "h a:u:f{?:}:m:x:v:t" OPTION
 do
   case $OPTION in
     h)
