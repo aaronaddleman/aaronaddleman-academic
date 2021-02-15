@@ -16,10 +16,16 @@ type: docs  # Do not modify.
 # - parent: Reference a parent ID if this page is a child.
 # - weight: Position of link in menu.
 menu:
-  example:
-    name: YourParentID
+  hugo:
+    name: hugo
     # parent: YourParentID
     weight: 1
 ---
 
-## hugo over view
+## overview
+
+Hugo makes for generating a static site with GoLang. This site is managed by Hugo
+and a theme called Academic. While making these entries is pretty straight forward,
+the task for remembering the right command always escapes me each time. So making
+an entry to document the options seemed most fitting for my note taking.
+
