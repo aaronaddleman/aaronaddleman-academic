@@ -1,0 +1,55 @@
+==================================================================
+https://keybase.io/aaronaddleman
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://aaronaddleman.com
+  * I am aaronaddleman (https://keybase.io/aaronaddleman) on keybase.
+  * I have a public key ASCC4jHeYgDuLdjPw0AjlFhvGm4rfymjua7e7shGfQZqwwo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101fec360fd5f566b657aac5e51454a21fba5a8717b7265787e3a8e812f8b6acfaa0a",
+      "host": "keybase.io",
+      "kid": "012082e231de6200ee2dd8cfc3402394586f1a6e2b7f29a3b9aedeeec8467d066ac30a",
+      "uid": "33d7b292c3394c8b0ad91256e7415c19",
+      "username": "aaronaddleman"
+    },
+    "merkle_root": {
+      "ctime": 1515902545,
+      "hash": "3963e7e40d0855f8a131543dd9eca5eaf4241137dc44a95837b0f068384d6ce8a260b9fe6d9125fff9b27ae0705b7d81b1bbd5a6fc6f546043ff6336ed6aedaf",
+      "hash_meta": "f11b0300e65c425cab557c789ea6f8488e7a3be8dafd21e84605b37ee309ede5",
+      "seqno": 1924752
+    },
+    "service": {
+      "hostname": "aaronaddleman.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.38"
+  },
+  "ctime": 1515902620,
+  "expire_in": 504576000,
+  "prev": "d27aea57829e0761beb4066cb53ecc4a8758f58b5f4ba16676fb29a0b7e0c134",
+  "seqno": 23,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgguIx3mIA7i3Yz8NAI5RYbxpuK38po7mu3u7IRn0GasMKp3BheWxvYWTFA097ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTAxZmVjMzYwZmQ1ZjU2NmI2NTdhYWM1ZTUxNDU0YTIxZmJhNWE4NzE3YjcyNjU3ODdlM2E4ZTgxMmY4YjZhY2ZhYTBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwODJlMjMxZGU2MjAwZWUyZGQ4Y2ZjMzQwMjM5NDU4NmYxYTZlMmI3ZjI5YTNiOWFlZGVlZWM4NDY3ZDA2NmFjMzBhIiwidWlkIjoiMzNkN2IyOTJjMzM5NGM4YjBhZDkxMjU2ZTc0MTVjMTkiLCJ1c2VybmFtZSI6ImFhcm9uYWRkbGVtYW4ifSwibWVya2xlX3Jvb3QiOnsiY3RpbWUiOjE1MTU5MDI1NDUsImhhc2giOiIzOTYzZTdlNDBkMDg1NWY4YTEzMTU0M2RkOWVjYTVlYWY0MjQxMTM3ZGM0NGE5NTgzN2IwZjA2ODM4NGQ2Y2U4YTI2MGI5ZmU2ZDkxMjVmZmY5YjI3YWUwNzA1YjdkODFiMWJiZDVhNmZjNmY1NDYwNDNmZjYzMzZlZDZhZWRhZiIsImhhc2hfbWV0YSI6ImYxMWIwMzAwZTY1YzQyNWNhYjU1N2M3ODllYTZmODQ4OGU3YTNiZThkYWZkMjFlODQ2MDViMzdlZTMwOWVkZTUiLCJzZXFubyI6MTkyNDc1Mn0sInNlcnZpY2UiOnsiaG9zdG5hbWUiOiJhYXJvbmFkZGxlbWFuLmNvbSIsInByb3RvY29sIjoiaHR0cHM6In0sInR5cGUiOiJ3ZWJfc2VydmljZV9iaW5kaW5nIiwidmVyc2lvbiI6MX0sImNsaWVudCI6eyJuYW1lIjoia2V5YmFzZS5pbyBnbyBjbGllbnQiLCJ2ZXJzaW9uIjoiMS4wLjM4In0sImN0aW1lIjoxNTE1OTAyNjIwLCJleHBpcmVfaW4iOjUwNDU3NjAwMCwicHJldiI6ImQyN2FlYTU3ODI5ZTA3NjFiZWI0MDY2Y2I1M2VjYzRhODc1OGY1OGI1ZjRiYTE2Njc2ZmIyOWEwYjdlMGMxMzQiLCJzZXFubyI6MjMsInRhZyI6InNpZ25hdHVyZSJ9o3NpZ8RA+WgANJJoIgxki3qmJ40Y60/oRt/6ZzS7C2jL5FrPlo6kgOnKTVZHeFRIA4vGzFhZn7fu/ToWXpaNLwQlQu4AC6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIENV0+EyJNwKtE7t+VmyXVahbWeLhDYQmVIzXuX+/feoo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/aaronaddleman
+
+==================================================================

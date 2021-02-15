@@ -28,12 +28,10 @@
   url = "code/"
   weight = 50
 
-
 [[main]]
-  name = "Gpg Key"
-  url = "keys/aaronaddleman.gpg.txt"
+  name = "Keys"
+  url = "keys/"
   weight = 50
-
 
 # [[main]]
 #   name = "Publications"
