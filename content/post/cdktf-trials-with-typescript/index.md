@@ -16,7 +16,7 @@ draft: false
 # To use, add an image named `featured.jpg/png` to your page's folder.
 # Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
 image:
-  caption: "by 𝓴𝓘𝓡𝓚 𝕝𝔸𝕀"
+  caption: "Photo by 𝓴𝓘𝓡𝓚 𝕝𝔸𝕀 on Unsplash"
   focal_point: ""
   preview_only: false
 
