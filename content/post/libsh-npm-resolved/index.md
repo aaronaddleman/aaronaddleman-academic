@@ -25,7 +25,7 @@ image:
 #   Simply enter your project's folder or file name without extension.
 #   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
 #   Otherwise, set `projects = []`.
-projects: []
+projects: ["libsh"]
 ---
 
 In my haste to fix this issue, I neglected to make a PR, but really, when its just one person working on a project... does it really matter? Maybe to some so I will try to improve, but NPM was not loading properly. I noticed this when trying to do [CDKTF](/post/cdktf-trials) tutorial where the bin install was not being recognized. And with that, this change was commited:
