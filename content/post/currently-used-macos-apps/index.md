@@ -96,7 +96,7 @@ extension gets in the way and I have to find small little hacks that get the job
 
 Over all, this editor is growing on me.
 
-## [Todoist](https://code.visualstudio.com/)
+## [Todoist](https://todoist.com/)
 
 An organized todo list is a very much hit for a miss with me. Todoist has a pretty good
 interface and lets you caputre really fast. The UI seems to be at the ready all the time
