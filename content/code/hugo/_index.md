@@ -1,9 +1,9 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Hugo"
-linktitle: "Hugo"
-summary:
+title: "Hugo and Academic"
+linktitle: "Hugo and Academic"
+summary: "Commands and notes of how to use Hugo and Academic that are useful to me"
 date: 2020-12-15T09:14:27-08:00
 lastmod: 2020-12-15T09:14:27-08:00
 draft: false  # Is this a draft? true/false
