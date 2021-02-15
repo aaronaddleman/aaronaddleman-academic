@@ -8,6 +8,6 @@ header:
   image: ""
 ---
 
-[keybase](keybase.txt)
+[keybase](/keybase.txt)
 
-[gpg](aaronaddleman.gpg.txt)
+[gpg](/aaronaddleman.gpg.txt)
