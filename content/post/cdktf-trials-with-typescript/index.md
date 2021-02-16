@@ -264,4 +264,4 @@ In short, that was a bit annoying or confusing. I am by no means a TypeScript no
 
 After reading some more articles in haste, I wonder what the real usage for Terraform really is? If you can use CDK with Python and it makes CloudFormation code, this really improves (or hides) the flaws of CloudFormation and empowers customers to use a programming language instead of an augmented JSON structure.
 
-I would like to try out CDKTF with Python with TF and without.
+I would like to try out CDKTF with Python with TF and with regular CDK.
