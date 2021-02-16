@@ -28,7 +28,7 @@ image:
 projects: ["libsh"]
 ---
 
-In my haste to fix this issue, I neglected to make a PR, but really, when its just one person working on a project... does it really matter? Maybe to some so I will try to improve, but NPM was not loading properly. I noticed this when trying to do [CDKTF](/post/cdktf-trials) tutorial where the bin install was not being recognized. And with that, this change was commited:
+In my haste to fix this issue, I neglected to make a PR, but really, when its just one person working on a project... does it really matter? Maybe to some so I will try to improve, but NPM was not loading properly. I noticed this when trying to do [CDKTF](/post/cdktf-trials-with-typescript) tutorial where the bin install was not being recognized. And with that, this change was commited:
 
 https://github.com/aaronaddleman/libsh/commit/14ec639eee67bf4150472ca35207eaf73406f6b9
 
