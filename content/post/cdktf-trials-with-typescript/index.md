@@ -28,6 +28,11 @@ image:
 projects: []
 ---
 
+## tl;dr
+
+- install the latest version of terraform 0.14.6 when using the [docker provider](https://registry.terraform.io/providers/kreuzwerker/docker/latest) v2.11.0
+- understand the language your using
+
 ## summary
 
 I have been wanting to try CDKTF for a while, so today seemed like a good time. Googling around for
