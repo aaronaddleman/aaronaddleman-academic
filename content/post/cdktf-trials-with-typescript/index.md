@@ -63,7 +63,7 @@ I went with the stable version as I have been burned way too many times with dev
 
 ## setup
 
-**Important: must install Terraform 12 or above.** This is best accomplished with `terraform-env`. If your using LIBSH, you can install `terraform-env` with the command `terraform_install_tfenv`. This allows you to use the command `terraform-env install #.#.#` to install which ever version you want have installed and enabled.
+**Important: must install Terraform 12 or above.** This is best accomplished with `terraform-env`. If your using LIBSH, you can install `terraform-env` with the command `terraform_install_tfenv`. This allows you to use the command `terraform-env install #.#.#` to install which ever version you want installed and enabled.
 
 ## coding
 
