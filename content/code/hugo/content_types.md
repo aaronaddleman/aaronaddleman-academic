@@ -79,7 +79,7 @@ Summarizing a project is great for gathering multiple posts under one goal. By s
 you can associate posts to be listed under the "related" section of the project and post.
 
 ```shell
-hugo new --kind project project/name-of-project
+hugo new --kind docs project/name-of-project
 ```
 
 What the fields mean:
@@ -103,13 +103,7 @@ The header matter of the project has a couple of nice features:
 This was a little confusing at first, but with some little testing, it made sense and
 here is my explanation:
 
-To make a project, you first start off with the command:
-
-```shell
-hugo new --kind docs dir/of/doc/_index.md
-```
-
-This creates the top level post of the document or project. On that document will be
+The menu creates the top level post of the document or project. On that document will be
 some header information. The menus on the left and right side are controlled by the
 header section called `menu`.
 
