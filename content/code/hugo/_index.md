@@ -17,7 +17,7 @@ type: docs  # Do not modify.
 # - weight: Position of link in menu.
 menu:
   hugo:
-    name: hugo
+    name: Hugo and Academic
     # parent: YourParentID
     weight: 1
 ---
@@ -29,3 +29,12 @@ and a theme called Academic. While making these entries is pretty straight forwa
 the task for remembering the right command always escapes me each time. So making
 an entry to document the options seemed most fitting for my note taking.
 
+## why academic
+
+1. 
+1.
+
+## commenting
+
+I found this really cool [project allows commenting with github issues for commenting](https://utteranc.es/).
+Some day I will install it, but for now I am good.

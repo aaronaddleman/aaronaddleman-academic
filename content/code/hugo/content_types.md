@@ -18,7 +18,7 @@ type: docs  # Do not modify.
 menu:
   hugo:
     name: content types
-    # parent: YourParentID
+    parent: Hugo and Academic
     weight: 2
 ---
 
@@ -95,8 +95,28 @@ The header matter of the project has a couple of nice features:
 | type                 | docs (this should not be modified, per theme instructions) |
 | menu                 | controls the sidebar content                               |
 | menu:topLevel:name   | names pages sub-topics to be listed in the sidebar         |
+| menu:topLevel:parent | set this to define the current pages parent                |
 | menu:topLevel:weight | controls the sidebar position of the item                  |
 
+### project menus
+
+This was a little confusing at first, but with some little testing, it made sense and
+here is my explanation:
+
+To make a project, you first start off with the command:
+
+```shell
+hugo new --kind docs dir/of/doc/_index.md
+```
+
+This creates the top level post of the document or project. On that document will be
+some header information. The menus on the left and right side are controlled by the
+header section called `menu`.
+
+The `toplevel` represents the current level of the document you are editing. **If this
+is the `_index.md` file, then use a short name for the first level of the navigation.
+As you continue making more files, you have the option of nesting these `toplevel` values
+of the document by defining its `parent`.
 
 ### the rest...
 
