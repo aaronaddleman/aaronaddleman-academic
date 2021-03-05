@@ -28,39 +28,46 @@ image:
 projects: []
 ---
 
-## github
+## Github
 
 Code lives in [libsh's github home](https://github.com/aaronaddleman/libsh) and more documentation is updated on a change basis.
 
-## history
+## Installation
 
-Over the years of working with Linux, I have found myself always trying to recall how to install something, or do
-an action, or setting just the correct environment variables in a certain file. After a while, I got tired and
-decided to start collecting small functions to this for me. ZSH also helped in allowing to use the TAB button
-for doing auto-complete of functions and variables.
+Super simple process to install LIBSH:
 
-1. sorting of features
-2. documenting of command examples
-3. refreshing due to drift
-4. validating environments
-5. supporting personal and professional environments
+```shell
+export LIBSH_PARENT_DIR=$HOME/src/github.com/
+mkdir -p $LIBSH_PARENT_DIR
+git clone https://github.com/aaronaddleman/libsh $LIBSH_PARENT_DIR/libsh
+echo "source $LIBSH_PARENT_DIR/libsh/libsh.sh 'fn'" >> $HOME/.zshrc
+echo "source $LIBSH_PARENT_DIR/libsh/libsh.sh 'env'" >> $HOME/.zshenv
+cp $LIBSH_PARENT_DIR/libsh/.libsh_example $HOME/.libshrc
+echo "Make a new shell to try it out!"
+```
 
-## sorting of features
+## History
+
+Over the years of working with Linux, I have found myself always trying to recall how to install something, or do an action, or setting just the correct environment variables in a certain file. Another reason is that most installation steps are not correct when it comes to loading lines in `.zshrc` and `.zshenv`. After a while, I got tired and decided to start collecting small functions to this for me. ZSH also helped in allowing to use the TAB button for doing auto-complete of functions and variables.
+
+## Benifets
+
+### Sorting of features
 
 All commands are sorted by their common prefix. This allows for the project to have their own buckets of commands and keep some basic sort of grouping.
 
-## documenting
+### Documenting
 
 Each command also serves as a documenation on how to use the service. Take using the aws command. For any one of them you may type in the command `type -f aws_blah` and you will be able to see what that function is doing or by using `the_command --help` for most commands I have documented.
 
-## refreshing
+### Refreshing
 
 There is a feature for checking the last known git clone date. This allows for detecting the desired max amount of drift before asking the customer if they want to refresh the git repo.
 
-## validation
+### Validation
 
 I have been using the pattern of a `pre` command where needed to validate the dependencies of the command. One example of this is with Vault where the function of `vault_pre` will try to test the connection to the `VAULT_ADDR`.
 
-## personal vs professional
+### Personal vs Professional
 
 Libsh will load all files in `$HOME/.sh.d/*.fn.sh` and `$HOME/.sh.d/*.env.sh` which allows for customizing your own functions that you require for either personal or professional environments.
