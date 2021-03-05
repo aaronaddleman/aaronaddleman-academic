@@ -2,8 +2,8 @@
 # Documentation: https://wowchemy.com/docs/managing-content/
 
 title: "Pandas, Aws, and Json"
-subtitle: ""
-summary: ""
+subtitle: "Reading data with Pandas, from AWS, in Json format."
+summary: "Parsing data directly from s3 can be done with Athena, but a long SQL statement can be hard to manage. Pandas gets the job done and offers a manageable alternative."
 authors: []
 tags: []
 categories: []
@@ -28,7 +28,9 @@ image:
 projects: []
 ---
 
-## summary
+[![AWS and Pandas](https://images.unsplash.com/photo-1530048265464-939ec434a884?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80 "Photo by Jim Bread on Unsplash")](https://images.unsplash.com/photo-1530048265464-939ec434a884?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80)
+
+## Summary
 
 Getting data from AWS s3 and organized has been sort of fun for me to take a stab of time. Fetching
 files from s3 by date and creating a frame, then doing some parsing is what this is all about.
