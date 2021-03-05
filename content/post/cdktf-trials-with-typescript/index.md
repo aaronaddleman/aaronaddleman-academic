@@ -57,6 +57,8 @@ I went with the stable version as I have been burned way too many times with dev
 
 ## reference
 
+- [cdk api](https://docs.aws.amazon.com/cdk/api/latest/index.html)
+- [cdk api typescript](https://docs.aws.amazon.com/cdk/api/latest/typescript/api/index.html)
 - [cdktf github](https://github.com/hashicorp/terraform-cdk)
 - [cdktf tutorial](https://learn.hashicorp.com/tutorials/terraform/cdktf-install?in=terraform/cdktf)
 - [cdktf with python](https://aws.amazon.com/blogs/developer/getting-started-with-the-aws-cloud-development-kit-and-python/)
