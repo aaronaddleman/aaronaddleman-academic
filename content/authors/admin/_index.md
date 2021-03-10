@@ -32,6 +32,9 @@ social:
 - icon: github
   icon_pack: fab
   link: https://github.com/aaronaddleman
+- icon: keybase
+  icon_pack: fab
+  link: https://kebase.io/aaronaddleman
 - icon: cv
   icon_pack: ai
   link: files/cv.pdf

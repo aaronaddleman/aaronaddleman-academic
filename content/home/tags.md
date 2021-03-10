@@ -5,13 +5,13 @@ headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 15 # Order that this section will appear.
 
-title = "Popular Topics"
-subtitle = ""
+title = "Tags"
+subtitle = "What I write about"
 
 [content]
   # Choose the taxonomy from `config.toml` to display (e.g. tags, categories)
   taxonomy = "tags"
-  
+
   # Choose how many tags you would like to display (0 = all tags)
   count = 20
 

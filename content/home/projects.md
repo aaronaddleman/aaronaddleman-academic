@@ -6,36 +6,36 @@ active = true  # Activate this widget? true/false
 weight = 20  # Order that this section will appear.
 
 title = "Projects"
-subtitle = ""
+subtitle = "Things I work on"
 
 [content]
   # Page type to display. E.g. project.
   page_type = "project"
-  
+
   # Filter toolbar (optional).
   # Add or remove as many filters (`[[content.filter_button]]` instances) as you like.
   # To show all items, set `tag` to "*".
   # To filter by a specific tag, set `tag` to an existing tag name.
   # To remove toolbar, delete/comment all instances of `[[content.filter_button]]` below.
-  
-  # Default filter index (e.g. 0 corresponds to the first `[[filter_button]]` instance below).
-  filter_default = 0
-  
-  ##[[content.filter_button]]
-  ##  name = "All"
-  ##  tag = "*"
-  
-  ##[[content.filter_button]]
-  ##  name = "shell"
-  ##  tag = "shell"
 
-  ##[[content.filter_button]]
-  ##  name = "k8"
-  ##  tag = "k8"
-  
-  # [[content.filter_button]]
-  #   name = "Other"
-  #   tag = "Demo"
+  # Default filter index (e.g. 0 corresponds to the first `[[filter_button]]` instance below).
+  filter_default = 1
+
+  [[content.filter_button]]
+    name = "All"
+    tag = "*"
+
+  [[content.filter_button]]
+    name = "cli"
+    tag = "cli"
+
+  [[content.filter_button]]
+    name = "sbc"
+    tag = "sbc"
+
+  [[content.filter_button]]
+    name = "music"
+    tag = "music"
 
 [design]
   # Choose how many columns the section has. Valid values: 1 or 2.
@@ -56,25 +56,25 @@ subtitle = ""
   #   Uncomment (by removing `#`) an option to apply it.
   #   Choose a light or dark text color by setting `text_color_light`.
   #   Any HTML color name or Hex value is valid.
-  
+
   # Background color.
   # color = "navy"
-  
+
   # Background gradient.
   # gradient_start = "DeepSkyBlue"
   # gradient_end = "SkyBlue"
-  
+
   # Background image.
   # image = "background.jpg"  # Name of image in `static/media/`.
    image_darken = 0.5  # Darken the image? Range 0-1 where 0 is transparent and 1 is opaque.
 
   # Text color (true=light or false=dark).
-  text_color_light = true  
-  
+  #text_color_light = true
+
 [advanced]
- # Custom CSS. 
+ # Custom CSS.
  #css_style = "background-image: url('https://images.unsplash.com/photo-1602460367673-091b70ba104a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80')"
- 
+
  # CSS class.
  #css_class = "bg-image parallax"
 +++
