@@ -19,7 +19,7 @@ subtitle = "Things I work on"
   # To remove toolbar, delete/comment all instances of `[[content.filter_button]]` below.
 
   # Default filter index (e.g. 0 corresponds to the first `[[filter_button]]` instance below).
-  filter_default = 1
+  filter_default = 0
 
   [[content.filter_button]]
     name = "All"
@@ -36,6 +36,10 @@ subtitle = "Things I work on"
   [[content.filter_button]]
     name = "music"
     tag = "music"
+
+  [[content.filter_button]]
+    name = "apps"
+    tag = "apps"
 
 [design]
   # Choose how many columns the section has. Valid values: 1 or 2.
