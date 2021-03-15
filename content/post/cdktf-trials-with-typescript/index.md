@@ -5,11 +5,11 @@ title: "Cdktf Trials with TypeScript"
 subtitle: "Trying out CDKTF with TypeScript"
 summary: "HashiCorp released an option of using CDKTF which promises to empower people to create infrastructure changes with a programming language. I followed a tutorial for TypeScript and write up my results about the discoveries I made along the way."
 authors: []
-tags: []
+tags: ['howto']
 categories: []
 date: 2021-02-15T09:09:24-08:00
 lastmod: 2021-02-15T09:09:24-08:00
-featured: false
+featured: true
 draft: false
 
 # Featured image
@@ -73,7 +73,7 @@ I made a repo called [cdk-typescript-docker](https://github.com/aaronaddleman/cd
 
 1. Autocomplete worked very well and picked up custom libraries
 1. The line of `import { Container, Image, DockerProvider } from './.gen/providers/docker'` was marked as un-resolved and not sure why. A little annoying. This is resolved with the command `cdktf get`
-1. 
+1.
 
 ## testing deploy
 
@@ -88,7 +88,7 @@ Yep! Everything worked really well...
 Too good to be true. Running `cdktf destroy` lead to the following:
 
 ```
-typescript-docker on  master [!] is 📦 v1.0.0 via ⬢ v15.0.1 took 32s 
+typescript-docker on  master [!] is 📦 v1.0.0 via ⬢ v15.0.1 took 32s
 ➜ cdktf destroy
 ⠋ initializing typescript-docker...
 2021/02/15 10:07:30 [DEBUG] Using modified User-Agent: Terraform/0.12.29 cdktf/0.1.0 (+https://github.com/hashicorp/terra⠼ planning typescript-docker...
@@ -127,18 +127,18 @@ Maybe I am using too low of terraform? Lets install the latest version.
 Lets try with 0.14.6 as the latest version.
 
 ```
-➜ tfenv install 0.14.6       
+➜ tfenv install 0.14.6
 Installing Terraform v0.14.6
 Downloading release tarball from https://releases.hashicorp.com/terraform/0.14.6/terraform_0.14.6_darwin_amd64.zip
 ################################################################################################################################################### 100.0%
 Downloading SHA hash file from https://releases.hashicorp.com/terraform/0.14.6/terraform_0.14.6_SHA256SUMS
 Unable to verify OpenPGP signature unless logged into keybase and following hashicorp
 Archive:  tfenv_download.qEgNRa/terraform_0.14.6_darwin_amd64.zip
-  inflating: /Users/addlema/.tfenv/versions/0.14.6/terraform  
+  inflating: /Users/addlema/.tfenv/versions/0.14.6/terraform
 Installation of terraform v0.14.6 successful. To make this your default version, run 'tfenv use 0.14.6'
 
-typescript-docker on  master is 📦 v1.0.0 via ⬢ v15.0.1 took 17s 
-➜ tfenv use 0.14.6    
+typescript-docker on  master is 📦 v1.0.0 via ⬢ v15.0.1 took 17s
+➜ tfenv use 0.14.6
 Switching default version to v0.14.6
 Switching completed
 ```
@@ -153,7 +153,7 @@ Terraform v0.14.6
 Ok lets try destroying again. Awesome. New error.
 
 ```
-➜ cdktf destroy            
+➜ cdktf destroy
 ⠙ planning typescript-docker...
 
 Error: Could not load plugin
@@ -179,7 +179,7 @@ non-zero exit code 1
 Makes sense. I am using a new version of terraform. In a way, this is good. If someone else were to use different versions, this is the treatment they would get when switching their tool versions. I am going to follow their requirement to proceed. But wait... it says `terraform init` ... I want to stay with CDKTF so I would think that using `cdktf init` would be the correct course of action. Lets find out!
 
 ```
-➜ cdktf init                                                                        
+➜ cdktf init
 ERROR: Cannot initialize a project in a non-empty directory
 ```
 
@@ -224,7 +224,7 @@ non-zero exit code 1
 Thats a big whopping **no**. Seems like I have some generated code that is borking on me. Lets try to find out what it is by destroying things:
 
 ```
-➜ rm -Rf terraform.tfstate* .gen cdktf.out main.d.ts main.js 
+➜ rm -Rf terraform.tfstate* .gen cdktf.out main.d.ts main.js
 ➜ docker stop tutorial && docker rm tutorial
 ```
 
@@ -235,7 +235,7 @@ Now, lets start over and change providers. It seems that HashiCorp gave up on th
 Lets run our favorite commands again:
 
 ```
-typescript-docker on  master [!] is 📦 v1.0.0 via ⬢ v15.0.1 took 9s 
+typescript-docker on  master [!] is 📦 v1.0.0 via ⬢ v15.0.1 took 9s
 ➜ terraform --version
 Terraform v0.14.6
 ➜ cdktf deploy
@@ -248,7 +248,7 @@ Summary: 2 created, 0 updated, 0 destroyed.
 ```
 
 ```
-typescript-docker on  master [!] is 📦 v1.0.0 via ⬢ v15.0.1 took 9s 
+typescript-docker on  master [!] is 📦 v1.0.0 via ⬢ v15.0.1 took 9s
 ➜ cdktf destroy
 Destroying Stack: typescript-docker
 Resources
