@@ -1,15 +1,15 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Pyfin"
-subtitle: "Python finance"
-summary: "Using Python to learn about the stock market, make analysis, and try some ML."
+title: "OP-Z Experiments"
+subtitle: "Things I have done with the OP-Z"
+summary: "Things I have done with the OP-Z"
 authors: []
-tags: ['apps']
+tags: ['music']
 categories: []
-date: 2020-11-07T13:53:27-08:00
-lastmod: 2020-11-07T13:53:27-08:00
-featured: false
+date: 2021-03-12T22:22:41-08:00
+lastmod: 2021-03-12T22:22:41-08:00
+featured: true
 draft: true
 
 # Featured image
@@ -27,7 +27,3 @@ image:
 #   Otherwise, set `projects = []`.
 projects: []
 ---
-
-Always wanted to learn bout economics, statisics, math, and finance. So I thought what better way than to build a tool to read the stockmarket. Maybe some day it will allow me to execute trades.
-
-[PyFin](https://github.com/aaronaddleman/pyfin) lives on github.com and as I dedicate time to its development, I would like to track some of its progress on this site for searching and sharing.

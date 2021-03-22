@@ -4,7 +4,7 @@
 title: "OP-1 Experiments"
 summary: "Experiments with the OP-1"
 authors: []
-tags: []
+tags: ["music"]
 categories: []
 date: 2020-11-19T13:03:52-08:00
 draft: true

@@ -24,7 +24,7 @@
   weight = 20
 
 [[main]]
-  name = "Bigraphy"
+  name = "Biography"
   url = "#about"
   weight = 30
 
