@@ -37,7 +37,7 @@ Code lives in [libsh's github home](https://github.com/aaronaddleman/libsh) and 
 Super simple process to install LIBSH:
 
 ```shell
-export LIBSH_PARENT_DIR=$HOME/src/github.com/
+export LIBSH_PARENT_DIR=$HOME/src/github.com
 mkdir -p $LIBSH_PARENT_DIR
 git clone https://github.com/aaronaddleman/libsh $LIBSH_PARENT_DIR/libsh
 echo "source $LIBSH_PARENT_DIR/libsh/libsh.sh 'fn'" >> $HOME/.zshrc
