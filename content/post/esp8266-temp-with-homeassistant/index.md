@@ -28,10 +28,24 @@ image:
 projects: ['sbc-sensors']
 ---
 
-1. wiring diagram
 
-```plantuml
-```
+## Tempurature recording
+
+Our garage refridgerator was having issues keeping food cold. So we grabbed a tempurature recorder that ran off a battery and stuck it in the freezer for a couple of days and then the fridge part for another couple of days. Upon each relocation, we captured the minium and maximum tempuratures. Turns out our fridge did not have the "garage mode". So we got rid of the unit and bought a new one with a "garage mode", but this required setting a dial to differnt positions between 1 to 5 based on overall ambiant temperature of the room, which is our garage.
+
+So I decided to improve our tempurature recording with the Feather Huzzah ESP8266 and three 1-wire waterproof sensors and using Home Assistant to record the values.
+
+## Wiring
+
+Below is what I endded up wiring up the three sensors. I am by no means any good with electronics and this setup could very well be totally incorrect, but its working for now. 
+
+![homeassistant_esp8266_wiring_diagram](/media/homeassistant_esp8266_wiring_diagram_bb.png)
+
+Take note of using pin 4 in the wiring diagram which is also referenced in the code below in the section called `dallas`.
+
+## ESPHome and Home Assistant
+
+The great thing about ESPHome is the simple configuration file you provide. After installing the ESPHome addon, I created a board and pretty much followed these steps to get a board configured:
 
 1. install esphomeflasher:
    - https://github.com/esphome/esphome-flasher
@@ -54,8 +68,9 @@ projects: ['sbc-sensors']
 1. show logs of the feather huzzah:
    - `esphomeflasher --esp8266 --show-logs ~/Downloads/test.bin`
 
-1. deep sleep testing
-   - https://esphome.io/components/deep_sleep.html
+{{% callout note %}}
+MQTT broker is also required. Here are some instructions on how to [install MQTT broker on Home Assistant](/post/homeassistant-mqtt-installation).
+{{% /callout %}}
 
 ```yaml
 esphome:

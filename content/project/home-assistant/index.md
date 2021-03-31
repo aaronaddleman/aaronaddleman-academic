@@ -96,7 +96,19 @@ This involved:
 - 1 x breadboard (for testing)
 - Power supply (I went with a usb power bank, but waiting for a reliable plugin wall adaptor)
 
-<insert wiring diagram here>
+I tried to take a picture and it came out somewhat ok...
+
+![homeassistant_esp8266_wiring_diagram](/media/homeassistant_esp8266_wiring_diagram.png)
+
+More details are on [Esp8266 Tempurature With Home Assistant](/post/esp8266-temp-with-homeassistant/)
+
+But this breadboard diagram should be more helpful...
+
+* red is +
+* black is -
+* blue is data
+
+While it might not match up with the photo I took of my setup the wiring is what I used.
 
 Once this was all wired up, it was a simple matter of placing the sensors and then adding some graphs. This was all too easy.
 
@@ -255,5 +267,31 @@ Create a iframe/website card with its url from above and boom! Twitter feed. Dow
 so I have taken to using the script of the `autorefresh.sh` to run every hour with crontab.
 
 ### Changing card text size
+ 
+So far the best modification to the dashboard for chaning text size has been [Big Number Card](https://github.com/custom-cards/bignumber-card) which allows you to make some customized cards. I wanted a card with large clock and date format displayed and after long searching, bignumber-card checked the boxes that I was looking for at the time. Here is my config for displaying a large clock with the current date:
 
-...
+```yaml
+type: 'custom:bignumber-card'
+title: time
+entity: sensor.time
+scale: 58px
+from: bottom
+min: 0
+max: 100
+color: '#FFF'
+style: var(--label-badge-blue)
+severity:
+  - value: 70
+    style: var(--label-badge-green)
+  - value: 90
+    style: var(--label-badge-yellow)
+  - value: 100
+    style: var(--label-badge-red)
+    color: '#FFFFFF'
+```
+
+This card is best viewed on a dark-themed dashboard as I have white for the text.
+
+![clock_and_date.png](/media/homeassistant_clock_and_date.png)
+
+## 
