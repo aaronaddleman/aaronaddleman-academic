@@ -104,6 +104,8 @@ More details are on [Esp8266 Tempurature With Home Assistant](/post/esp8266-temp
 
 But this breadboard diagram should be more helpful...
 
+![homeassistant_esp8266_wiring_diagram](/media/homeassistant_esp8266_wiring_diagram_bb.png)
+
 * red is +
 * black is -
 * blue is data
@@ -267,7 +269,7 @@ Create a iframe/website card with its url from above and boom! Twitter feed. Dow
 so I have taken to using the script of the `autorefresh.sh` to run every hour with crontab.
 
 ### Changing card text size
- 
+
 So far the best modification to the dashboard for chaning text size has been [Big Number Card](https://github.com/custom-cards/bignumber-card) which allows you to make some customized cards. I wanted a card with large clock and date format displayed and after long searching, bignumber-card checked the boxes that I was looking for at the time. Here is my config for displaying a large clock with the current date:
 
 ```yaml
@@ -294,4 +296,4 @@ This card is best viewed on a dark-themed dashboard as I have white for the text
 
 ![clock_and_date.png](/media/homeassistant_clock_and_date.png)
 
-## 
+##
