@@ -238,7 +238,7 @@ Create a file to run a script as the user named "pi"
 
 ### Adding a twitter iframe
 
-You can create files in the `<config>/www/filename.html and it will be served up as web content by Home Assistant
+You can create files in the `<config>/www/filename.html` and it will be served up as web content by Home Assistant
 
 ```html
 <script>window.twttr = (function(d, s, id) {
