@@ -79,7 +79,7 @@ subtitle = ""
 [[feature]]
   icon = "elixir-lang-icon"
   icon_pack = "custom"
-  name = "Elixer"
+  name = "Elixir"
   description = "0%"
 
 
