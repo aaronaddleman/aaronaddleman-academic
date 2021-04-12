@@ -10,7 +10,7 @@ categories: []
 date: 2021-04-11T09:52:21-07:00
 lastmod: 2021-04-11T09:52:21-07:00
 featured: false
-draft: false
+draft: true
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
@@ -27,6 +27,14 @@ image:
 #   Otherwise, set `projects = []`.
 projects: []
 ---
+
+## Door sensor
+
+As I take small steps with the Home Assistant and some other sensors, I get closer to understanding what is possible and the hidden errors that await me down the road as I put these additions to the test.
+
+This goal is about tracking the state of the freezer door of the garage freezer. The reason for doing this is a couple times now the door has been open just a little bit and lets out too much cold air which ruins the food inside. The magnetic reed switch is so simple. By using a magnetic fields, it sends an "on" or "off" state of the switch which will all Home Assistant to monitor the door activity.
+
+Below I have the code and wiring guide of how I set this up.
 
 ## code
 
@@ -57,24 +65,28 @@ api:
 ota:
   password: !secret ota_password
 
-
-# binary_sensor:
-#   - platform: gpio
-#     pin:
-#       number: 4
-#       mode: INPUT_PULLDOWN_16
-#       inverted: True
-#     name: "garage_freezer_door"
-#     device_class: door
-
 binary_sensor:
   - platform: gpio
-    name: "Garage Door is Open"
+    name: "Freezer Door is Closed"
     pin:
       number: 4
       mode: INPUT_PULLUP
 ```
 
-wiring:
-  no -> PIN 4
-  com -> GND
+## Wiring
+
+![magnetic_reed_switch_bb](/media/magnetic_reed_switch_bb.png)
+
+As the diagram displays the magnetic reed switch, there are two terminals displayed, but in my case I actually have three:
+
+* `com` = `common`
+* `no` = `normally open`
+* `nc` = `normally closed`
+
+Here in my diagram, I have the `com` hooked up to `GRD` and the `nc` hooked up to `PIN 4` which is part of the `GPIO` group of pins.
+
+[ESPHome GPIO docs](https://esphome.io/components/binary_sensor/gpio.html?highlight=gpio) have some good notes on what configuration options you can use with the basic GPIO binary sensor.
+
+## Alerting
+
+...
