@@ -9,30 +9,31 @@ title = "Skills"
 subtitle = ""
 
 # Showcase personal skills or business features.
-# 
+#
 # Add/remove as many `[[feature]]` blocks below as you like.
-# 
+#
 # For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
 # Icons also come from: https://symbols.radicasoftware.com/97/brands-ta-th/45/terraform-icon
+# or from: https://www.vectorlogo.zone/?q=
 
 [[feature]]
   icon = "python"
   icon_pack = "fab"
   name = "Python"
   description = "40%"
-  
+
 [[feature]]
   icon = "Clojure_logo"
   icon_pack = "custom"
   name = "Clojure"
-  description = "10%"  
+  description = "10%"
 
 [[feature]]
   icon = "ruby-icon"
   icon_pack = "custom"
   name = "Ruby"
-  description = "70%"  
-  
+  description = "70%"
+
 [[feature]]
   icon = "terraform-icon"
   icon_pack = "custom"
@@ -75,6 +76,12 @@ subtitle = ""
   name = "Kubernetes"
   description = "30%"
 
+[[feature]]
+  icon = "elixir-lang-icon"
+  icon_pack = "custom"
+  name = "Elixer"
+  description = "0%"
+
 
 
 # Uncomment to use emoji icons.
@@ -82,7 +89,7 @@ subtitle = ""
 #  icon = ":smile:"
 #  icon_pack = "emoji"
 #  name = "Emojiness"
-#  description = "100%"  
+#  description = "100%"
 
 # Uncomment to use custom SVG icons.
 # Place custom SVG icon in `assets/images/icon-pack/`, creating folders if necessary.
