@@ -2,10 +2,10 @@
 # Documentation: https://wowchemy.com/docs/managing-content/
 
 title: "Magnetic Reed Switch Esp8266"
-subtitle: ""
-summary: ""
+subtitle: "Using magnetic on/off sensor to detect a door's status"
+summary: "I wanted to detect when my freezer door opens or closes to get more data on when the tempurature drops. This also is an attempt at trying to create an alarm if the door is not closed all the way."
 authors: []
-tags: ['esp8266', 'newtag']
+tags: ['esp8266', 'homeassistant', 'sbc']
 categories: []
 date: 2021-04-11T09:52:21-07:00
 lastmod: 2021-04-11T09:52:21-07:00
@@ -25,7 +25,7 @@ image:
 #   Simply enter your project's folder or file name without extension.
 #   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
 #   Otherwise, set `projects = []`.
-projects: []
+projects: ['sbc-sensors']
 ---
 
 ## Door sensor
