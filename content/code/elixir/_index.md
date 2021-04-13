@@ -2,8 +2,8 @@
 # Documentation: https://wowchemy.com/docs/managing-content/
 
 title: "Elixir"
-linktitle: "Elixir"
-summary:
+linktitle: "Elixir notes and discoveries"
+summary: "My summary and notes about Elixir as I grow with the language"
 date: 2021-04-13T00:12:55-07:00
 lastmod: 2021-04-13T00:12:55-07:00
 draft: false  # Is this a draft? true/false
@@ -28,7 +28,7 @@ Built on top of Erlang and taking some inspiration from Ruby, Elixir, while stil
 
 ### Elixir
 
-I high suggest following the [official docs of installing Elixir](https://elixir-lang.org/install.html) instead of what I have documented here. Below are my instructions I used for my Ubuntu docker image which also somes with some extra fluff on top being the JupyterLabs and VSCode server (that and also trying `brew install elixir` failed for me).
+I highly suggest following the [official docs of installing Elixir](https://elixir-lang.org/install.html) instead of what I have documented here. Below are my instructions I used for my Ubuntu docker image which also somes with some extra fluff on top being the JupyterLabs and VSCode server (that and also trying `brew install elixir` failed for me).
 
 ``` shell
 sudo apt install gnupg2
@@ -57,3 +57,28 @@ MIX_ENV=prod mix compile
 jupyter console --kernel ielixir
 jupyter kernelspec list
 ```
+
+## Errors
+
+### Whats important
+
+### Debugging process
+
+## Objects
+
+### Variables
+
+### Classes
+
+## TDD
+
+### Getting Started
+
+## Patterns
+
+### App structure
+
+## Frameworks
+
+### Phonix
+
