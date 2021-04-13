@@ -21,3 +21,48 @@ menu:
     # parent: YourParentID
     weight: 1
 ---
+
+Commands used to:
+
+1. install elixir
+1. install IElixr
+
+``` shell
+12  wget https://packages.erlang-solutions.com/erlang-solutions_2.0_all.deb && sudo dpkg -i erlang-solutions_2.0_all.deb
+13  sudo apt install gnupg2
+14  wget https://packages.erlang-solutions.com/erlang-solutions_2.0_all.deb && sudo dpkg -i erlang-solutions_2.0_all.deb
+15  sudo apt update
+16  sudo apt install esl-erlang
+17  erl
+18  elixer -v
+19  elixir -v
+20  erl -v
+21  sudo apt install elixir
+22  elixir -v
+23  cd work
+24  ls
+25  mix new hello
+26  cd hello
+27  mix help
+28* iex -S mix
+29* ls
+30* cd hello
+31* iex -S mix
+32* cd ..
+33* git clone https://github.com/pprzetacznik/IElixir.git
+34* cd IElixir
+35* mix deps.get
+36* mix test
+37* apt-get install libzmq3-dev
+38* sudo apt-get install libzmq3-dev
+39* apt-get install libzmq3-dev
+40* mix test
+41* sudo apt install build-essential
+42* mix test
+43* MIX_ENV=prod mix compile
+44* ./install_script.sh
+45* jupyter console --kernel ielixir
+46  jupyter kernelspec list
+47  ls -al
+48  cat mix.exs
+```
