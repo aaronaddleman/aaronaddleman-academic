@@ -17,52 +17,43 @@ type: docs  # Do not modify.
 # - weight: Position of link in menu.
 menu:
   example:
-    name: YourParentID
+    name: Elixir
     # parent: YourParentID
     weight: 1
 ---
 
-Commands used to:
+Built on top of Erlang and taking some inspiration from Ruby, Elixir, while still relativly new is a very fast language with great functional programming and concurancy support.
 
-1. install elixir
-1. install IElixr
+## Installing
+
+### Elixir
+
+I high suggest following the [official docs of installing Elixir](https://elixir-lang.org/install.html) instead of what I have documented here. Below are my instructions I used for my Ubuntu docker image which also somes with some extra fluff on top being the JupyterLabs and VSCode server (that and also trying `brew install elixir` failed for me).
 
 ``` shell
-12  wget https://packages.erlang-solutions.com/erlang-solutions_2.0_all.deb && sudo dpkg -i erlang-solutions_2.0_all.deb
-13  sudo apt install gnupg2
-14  wget https://packages.erlang-solutions.com/erlang-solutions_2.0_all.deb && sudo dpkg -i erlang-solutions_2.0_all.deb
-15  sudo apt update
-16  sudo apt install esl-erlang
-17  erl
-18  elixer -v
-19  elixir -v
-20  erl -v
-21  sudo apt install elixir
-22  elixir -v
-23  cd work
-24  ls
-25  mix new hello
-26  cd hello
-27  mix help
-28* iex -S mix
-29* ls
-30* cd hello
-31* iex -S mix
-32* cd ..
-33* git clone https://github.com/pprzetacznik/IElixir.git
-34* cd IElixir
-35* mix deps.get
-36* mix test
-37* apt-get install libzmq3-dev
-38* sudo apt-get install libzmq3-dev
-39* apt-get install libzmq3-dev
-40* mix test
-41* sudo apt install build-essential
-42* mix test
-43* MIX_ENV=prod mix compile
-44* ./install_script.sh
-45* jupyter console --kernel ielixir
-46  jupyter kernelspec list
-47  ls -al
-48  cat mix.exs
+sudo apt install gnupg2
+wget https://packages.erlang-solutions.com/erlang-solutions_2.0_all.deb && sudo dpkg -i erlang-solutions_2.0_all.deb
+sudo apt update
+sudo apt install esl-erlang
+sudo apt install elixir
+elixir -v
+rm erlang-solutions_2.0_all.deb
+```
+
+### IElixir
+
+This is for the Jupyter Kernel. In the end, I had to list the installed kernels to ensure the install worked ok. After that, it was a matter of just doing a web-refresh of JupyterLabs and I was rock'n with Elixir kernel. Very easy experience.
+
+```shell
+git clone https://github.com/pprzetacznik/IElixir.git
+cd IElixir
+mix deps.get
+sudo apt-get install libzmq3-dev
+sudo apt-get install libzmq3-dev
+sudo apt install build-essential
+mix test
+MIX_ENV=prod mix compile
+./install_script.sh
+jupyter console --kernel ielixir
+jupyter kernelspec list
 ```
