@@ -5,12 +5,12 @@ title: "Magnetic Reed Switch Esp8266"
 subtitle: ""
 summary: ""
 authors: []
-tags: []
+tags: ['esp8266', 'newtag']
 categories: []
 date: 2021-04-11T09:52:21-07:00
 lastmod: 2021-04-11T09:52:21-07:00
 featured: false
-draft: true
+draft: false
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
@@ -89,4 +89,31 @@ Here in my diagram, I have the `com` hooked up to `GRD` and the `nc` hooked up t
 
 ## Alerting
 
-...
+This was a little confusing at first, then it worked.. but I did not like the way it worked... then I found *automations*... then I broke everything... and trying to fix it.
+First I started with modifying the `configuration.yaml` file and added the following code:
+
+```yaml
+alert:
+  freezer_door:
+    name: Freezer Door
+    done_message: Freezer Door now closed
+    entity_id: binary_sensor.freezer_door_is_closed
+    state: "off"
+    repeat: 1
+    can_acknowlege: true
+    skip_first: false
+    notifiers:
+      - mobile_app_aaron_iphone
+```
+
+All of this information came from looking up the available sensor names and status/states from the *Developer Tools* section. Ran some testing and nothing worked... Or so I thought. I should have check my notifications
+section of my iPhone because I found out later they came in after restarting Home Assistant. But, nope.. I decided to remove the above code and try using the *Automation* section to make a rule, condition, action, ... which
+did not work out. The fields could use some default values so I know what format to input. Ohwell... going back to my iPhone I noticed a ton of notifications that took place many minutes ago! So the above code works, but
+could use some definite tweaking. But that about does it for now, I think this is a good spot to stop and if I made more discoveries, will make a new update.
+
+## Summary
+
+The updates I get from these sensors is really fast! Quality of the sensor plastic shroud is pretty bad, but I really like how this all turned out and for a pretty cheap price.
+Other things I want to get done are inserting annotations into Grafana for plotting on a graph. No idea if thats even possible but I think an *Automation* is probably in store for
+a future post in the near future...oh would you look at that.. Grafana has an [api for annotations](https://grafana.com/docs/grafana/latest/http_api/annotations/).. so yah, seems
+pretty possible!
