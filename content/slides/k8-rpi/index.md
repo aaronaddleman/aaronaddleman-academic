@@ -1,8 +1,8 @@
 ---
-title: Slides
-summary: An introduction to using Academic's Slides feature.
+title: K8 on Raspberry Pi
+summary: why to install your own raspberry pi Kubernetes cluster and what afterwards
 authors: []
-tags: []
+tags: [“k8”]
 categories: []
 date: "2019-02-05T00:00:00Z"
 slides:
@@ -19,10 +19,12 @@ on the Raspberry Pi
 
 ---
 
-but first,
-why
+
+# Why
 
 ---
+
+# Some Reasons
 
 1. {{% fragment %}} a lab {{% /fragment %}}
 1. {{% fragment %}} cheap {{% /fragment %}}
@@ -30,9 +32,9 @@ why
 
 ---
 
-# Create slides in Markdown with Academic
+# Getting started
 
-[Academic](https://sourcethemes.com/academic/) | [Documentation](https://sourcethemes.com/academic/docs/managing-content/#create-slides)
+[Basic install](https://aaronaddleman.com/project/k8-on-rpi/)
 
 ---
 
