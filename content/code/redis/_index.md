@@ -62,6 +62,20 @@ Show the type of value being stored in a key
 TYPE keyname
 ```
 
+### Getting keys
+
+#### Get
+
+```
+GET keyname
+```
+
+#### Zrange
+
+```
+ZRANGE keyname start stop [score]
+```
+
 ### Deleting keys
 
 ```shell
