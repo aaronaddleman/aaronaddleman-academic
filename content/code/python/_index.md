@@ -91,6 +91,12 @@ mylist[0]
 mylist[-1]
 ```
 
+## logic
+
+### if-else
+
+### try
+
 ## classes
 
 ### dataclasses
