@@ -16,7 +16,7 @@ type: docs  # Do not modify.
 # - parent: Reference a parent ID if this page is a child.
 # - weight: Position of link in menu.
 menu:
-  hugo:
+  GoLang:
     name: GoLang
     # parent: YourParentID
     weight: 1
