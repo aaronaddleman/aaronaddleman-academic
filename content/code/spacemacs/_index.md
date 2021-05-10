@@ -22,8 +22,11 @@ menu:
     weight: 1
 ---
 
+
 Emacs vs. Vim - the age old battle... but thats boring. Lets combine them! Enter: Spacemacs. The place you can choose your editor and still benifet from Emacs rich library of syntax and extensibility with Lisp. Lets
 face it, all things _could be_ traced back to influence from Lisp. So lets start with that as some features of Spacemacs:
+
+(Note: All docs here are using the Vim Mode for Spacemacs. Sometimes the docs will include the Control Tower mode and it will be noted.)
 
 ## Features
 
