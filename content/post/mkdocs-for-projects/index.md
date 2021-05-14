@@ -54,7 +54,7 @@ This is very interesting to me. While I completly support and recognize the need
 people to make simple notes and tables, I have to take notice of there being two groups of people and one
 of them is unhappy.
 
-The other observation(s) (that has grown over the years) goes like this:
+The other observations (that has grown over the years) goes like this:
 
 > * You read more code than you write.
 > * You read logs more than you read code.
@@ -72,8 +72,8 @@ on what you can expect for the state of the application.
 
 What does this all really mean? What does it matter?
 
-To me, this is one way to measure a well described application where
-making a change is really easy if we just reverse the order from above:
+To me, this is one way to measure a well documented and designed application
+where making a change is really easy if we just reverse the order from above:
 
 > * Read the documenation
 > * Read the timestamped logs for where you want to make a change
