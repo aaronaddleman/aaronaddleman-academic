@@ -28,17 +28,17 @@ image:
 projects: []
 ---
 
-After writting many types of documentation and experienced opinions from peers and management, I have started
-down my path of experimenting with a static site generator which has the goal of making documentation. Through
-out my career I have written many documents for helping my peers have a reference for what I have changed or observed to be set in place.
-I have also use multiple types of formatts: MoinMoin, Word, Confluence, SharePoint,
+After writing many types of documentation and experienced opinions from peers and management, I have started
+down my path of experimenting with a static site generator which has the goal of making documentation. Throughout
+my career I have written many documents for helping my peers have a reference for what I have changed or observed to be set in place.
+I have also use multiple types of formats: MoinMoin, Word, Confluence, SharePoint,
 MarkDown files. These are all okay for their individual needs, but I have never been really satisfied with
 any of them.
 
 There are two problems that I want to solve:
 
 1. Improve searching for content
-1. Git based PRs include documenation updates
+1. Git based PRs include documentation updates
 
 ## Observations
 
@@ -55,9 +55,9 @@ is a pattern of changing code.
 
 ### Groups of people
 
-Most technology based projects have three major groups of people who are involved with the product(s).
+Most technology-based projects have three major groups of people who are involved with the product(s).
 One is the creator/maintainer of the product(s), the second is the user/consumer of the product. And the
-third is the Product Owner who represents the high level needs between the user/consumer and the creator/maintainor.
+third is the Product Owner who represents the high-level needs between the user/consumer and the creator/maintainer.
 Lets go with the standard terminology and use: Engineers, Users, and Owners.
 I suggest that the documents for each of the groups is not _entirely_ the same.
 
@@ -69,14 +69,14 @@ I lost you little. Lets look at three, very basic, types of information for a pr
 
 This piece of information is vital to an application. It also overlaps in both
 groups of people being the Users and the Engineers. When this information changes
-(most likly it wont...but we all know thats not a good thing to say as things
+(most likely it won't...but we all know that's not a good thing to say as things
 nothing stays the same) there will be more login urls on the Engineering side than
 the Users side. But they do overlap.
 
 * Features/Expectations
 
 As an application grows the features change with each release. Yah I know
-thats super obvious. Engineers are going to make these feature changes and
+that's super obvious. Engineers are going to make these feature changes and
 they would also know best how to describe the use of these features. When the
 PR of the version is merged in to the default branch the documentation should
 be carried with the change.
@@ -84,7 +84,7 @@ be carried with the change.
 * Sell me
 
 Why should I use this product(s) instead of something else? Okay, I like
-what your selling. Will I have to work really hard to get signed up? Any
+what you're selling. Will I have to work really hard to get signed up? Any
 new features coming soon? All of these are about the Product Owner and
 they sell the product. Is there any overlap of content from the above?
 Yes and No. This content is meant to sell to Users. A high level of
@@ -243,14 +243,101 @@ nav:
 
 A more complex configuration would look like the following which includes a really nice theme:
 
-
 ```
 # install theme
-pipenv install mkdocs-material
+pipenv install mkdocs-material plantuml-markdown mkdocs-exclude-search
 ```
 
+then make a really nice long mkdocs.yml file with
+
 ```yml
+site_name: "Awesome Site Name"
+repo_url: https://github.com/your/url
+repo_name: Awesome Site Name
+nav:
+  - Home:
+    - Index: index.md
+    - Operations: operations.md
+    - Tools: tools.md
+plugins:
+  - search
+  - exclude-search:
+      exclude:
+        - projects/*
+theme:
+  name: material
+  features:
+    - toc.integrate
+    - navigation.instant
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - header.autohide
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+markdown_extensions:
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.superfences
+  - pymdownx.details
+  - admonition
+  - pymdownx.highlight:
+      linenums: true
+  - pymdownx.snippets
+  - abbr
+  - def_list
+  - toc:
+      permalink: true
+  - plantuml_markdown:
+      server: http://www.plantuml.com/plantuml
 ```
+
+#### The README.md and how to move
+
+With regards to MkDocs, I have not had success in bringing in the `README.md` file into
+the content. If you try to point the `mkdocs.yml` file to the `./README.md` it gets confused.
+This is okay because when you decide to move the docs to MkDocs, you should
+really just take the `README.md` content and move it over to `./docs/index.md` or a split up
+some of the content to some additional files that matches the kind of content that is needed.
+
+At this time, I have found the following files usually cover a good amount of information
+for _most projects_ but each one will have its own requirements:
+
+```
+./docs/index.md
+./docs/quickstart.md
+./docs/accounts.md
+./docs/design.md
+./docs/secrets.md
+./docs/media/img.jpg
+```
+
+But do not get rid of the `README.md` as it is still very useful to provide a *_Welcome to_* the project
+with a _Summary_, _Quick Start_, _Additional Docs_.
+
+### One repo, multiple projects
+
+When you have multiple projects inside of a Git repo, the following options are possible:
+
+#### projects are not related:
+
+I would put multiple `mkdocs.yml` and `./docs` files and directories under their project folder
+and manage the static content separately. This is the most straight forward approach to keeping
+the content separate and assuming there is no links required between the projects.
+
+#### projects are related:
+
+Keep the `mkdocs.yml` and `./docs` at the root level of the git repo and split up the content
+as needed by the project. Ultimatly the content and project files are all related and the docs
+should reflect the relationship in the same mannor.
 
 ### Method B
 
@@ -278,6 +365,18 @@ Here is one way to implement:
    - create content in `./docs/goodtopics.md`
    - update `./projects/newproject/mkdocs.yml` file with nav entries
    - update `./mkdocs` nav with includes like the example below
+
+```yaml
+nav:
+  - Home:
+    - Index: index.md
+    - Operations: operations.md
+    - Tools: tools.md
+    - Projects:
+        - project1:
+            - application: '!include projects/p1a/mkdocs.yml'
+            - infrastructure: '!include projects/p1b/mkdocs.yml'
+```
 
 ## Conclusion
 
