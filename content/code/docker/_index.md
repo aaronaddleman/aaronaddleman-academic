@@ -63,3 +63,30 @@ do
 done
 ```
 
+## docker-compose.yml
+
+### plain simple template
+
+https://docs.docker.com/compose/compose-file/compose-file-v3/
+
+```yml
+version: "3.9"
+services:
+  webapp:
+    build:
+      context: ./dir
+      dockerfile: Dockerfile-alternate
+      args:
+        buildno: 1
+      labels:
+        - "com.example.description=Accounting webapp"
+        - "com.example.department=Finance"
+        - "com.example.label-with-empty-value"
+    depends_on:
+      - db
+      - redis
+  redis:
+    image: redis
+  db:
+    image: postgres
+```
