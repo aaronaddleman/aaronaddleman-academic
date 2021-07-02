@@ -96,16 +96,17 @@ see these categories of information have their place for being visible to
 different groups of people. Lets go over the attributes again, but this
 time assign the contributors and the consumers of the content:
 
-| Attribute                               | Contributor   | Consumer      | Where it belongs          |
-| :--                                     | :--           | :--           | :--                       |
-| Login urls                              | Engineers     | Engineer/User | Docs in git, Docs in Wiki |
-| Features/Expectations                   | Engineers     | Engineer/User | Docs in git, Docs in Wiki |
-| Architecture/Design (detailed diagrams) | Engineers     | Engineer      | Docs in git               |
-| Sell me (including quick diagrams)      | Product Owner | User          | Docs in Wiki              |
+| Attribute                               | Contributor   | Consumer       | Where it belongs                   |
+| :--                                     | :--           | :--            | :--                                |
+| Login urls                              | Engineers     | Engineers/User | Git - ./docs/resources.md, Wiki    |
+| Features/Expectations                   | Engineers     | Engineers/User | Git - ./README.md, Wiki            |
+| Secrets/Accounts/Operations (etc..)     | Engineers     | Engineers      | Git - ./docs/operations/*.md       |
+| Architecture/Design (detailed diagrams) | Engineers     | Engineers      | Git - ./docs/design.md             |
+| Sell me (including quick diagrams)      | Product Owner | User           | Git - ./README.md, Wiki (optional) |
 
 Yes, thats right, I am saying that documentation is **_best served in Git_** and
 if helpful, to also publish to the Wiki. The last attribute
-of the **Sell me** should only be in the Wiki. The reason for doing
+of the **Sell me** is in the `README.md`. Bonus points for publishing to Wiki . The reason for doing
 this is to allow the publishing of features for a product by the Product
 Owner.
 
