@@ -3,7 +3,7 @@
 
 title: "Pyenv"
 linktitle: "Pyenv"
-summary:
+summary: "Select which version of Python you want to use on a global or local scope."
 date: 2021-07-23T22:57:27-07:00
 lastmod: 2021-07-23T22:57:27-07:00
 draft: false  # Is this a draft? true/false
