@@ -20,25 +20,42 @@ type: book # Do not modify.
 Sure, we all do it and everyone has their own reasons for what they use or its a Docker container. Am I right? Okay so apart from using Docker and fancy volume mounts, I like the tools to be as close as possible to my editor so it can validate the package is loaded or linter and format my files or run some FN that a REPL can try out. If you are liking how that sounds then read on!
 
 
+## Why I did this
+
+Building a working deveopment environment is unique to many people and teams. There are many situations
+that make this process go in different directions, but at its core, there are some ideas that make
+for an improved position to allow for nimble growth and additions:
+
+1. Try to not use global as much as possible
+     - This means use as many utilities installed to your locally home/project directory
+     instead of the global environment (excluding containers)
+     - Less `root` based access rights needed for modifying settings
+     - Multiple versions allowed to be installed
+1. Keep your `$PATH` clean
+     - Less work for your shell to scan of directories of executables available
+     - Clear understanding of what is taking presedence
+     - Adding/Removing what is needed is very clear of wher its happening
+
 
 ## What I use
 
 | Name            | Why                                                                              |
 | :--             | :--                                                                              |
-| pyenv           | Allows me to select python version without disturbing the installed one          |
-| git config      | Set git per main directory for personal and professional projects                |
-| mkdocs          | Allows for easy documenting of projects using MarkDown                           |
-| powerline fonts | Makes my terminals look nice with icons and unicode characters                   |
+| Spacemacs       | My current editor of choice                                                      |
 | brew            | Not a big fan, but used after I have found other ways to install things on a Mac |
-| oh-my-zsh       | Has some good features for managing the ZSH prompt with prompts and plugins      |
-| libsh           | My own tools that I have found useful for improving the shell experience         |
+| ctrl + x + e    | Edits a command line with my selected editor                                     |
 | docker          | Containers and experimentation                                                   |
-| rvm             | Allows me to select a Ruby version without disturbing the installed one          |
+| git config      | Set git per main directory for personal and professional projects                |
+| libsh           | My own tools that I have found useful for improving the shell experience         |
+| mkdocs          | Allows for easy documenting of projects using MarkDown                           |
 | nvm             | Allows me to select a Node version without disturbing the installed one          |
+| oh-my-zsh       | Has some good features for managing the ZSH prompt with prompts and plugins      |
+| powerline fonts | Makes my terminals look nice with icons and unicode characters                   |
+| pyenv           | Allows me to select python version without disturbing the installed one          |
+| rvm             | Allows me to select a Ruby version without disturbing the installed one          |
 | tfenv           | Allows me to select a Terraform version without disturbing the installed one     |
 | tgenv           | Allows me to select a Terragrunt version without disturbing the installed one    |
-| ctrl + x + e    | Edits a command line with my selected editor                                     |
-| Spacemacs       | My current editor of choice                                                      |
+| .editorconfig   | Align your team to the same settings of indenting/tabs-vs-spaces/etc...          |
 
 ### pyenv
 
@@ -52,8 +69,6 @@ that is defined inside the file named `.python-version`. You can also stamp this
 
 things
 
-1. pyenv
-1. git config per dir include
 1. .editorconfig
 1. mkdocs
 1. github kanban (simple useage)
