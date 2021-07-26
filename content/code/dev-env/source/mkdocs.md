@@ -23,3 +23,9 @@ have [an article about how I think its better than wiki for engineers](/post/mkd
 
 Getting started with MkDocs is pretty easy, but I have come up with a method that might make things even easier. The following project
 streamline this with a container defined in a `Dockerfile`.
+
+## Easy-MkDocs
+
+I created a simple [project called `Easy-MkDocs`](https://easy-mkdocs.addleman.dev) to help in running `mkdocs` a little easier with containers.
+
+Please use if you find it helpful.
