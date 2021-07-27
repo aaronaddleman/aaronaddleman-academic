@@ -80,7 +80,7 @@ subtitle = ""
   icon = "elixir-lang-icon"
   icon_pack = "custom"
   name = "Elixir"
-  description = "0%"
+  description = "2%"
 
 
 
