@@ -16,3 +16,13 @@ type: book  # Do not modify.
 # - parent: Reference a parent ID if this page is a child.
 # - weight: Position of link in menu.
 ---
+
+## Why
+
+Terraform allows to create many resources on multiple cloud providers. Very helpful if you do not appreciate the CloudFormation or other Cloud Provider
+solutions to do automatic provisioning while storing state to plan changes for future updates. As terraform versions change, its nice to use [tfenv](https://github.com/tfutils/tfenv) to select and switch between multiple versions.
+
+## Selecting the version
+
+Creating the file in a project's root directory called `.terraform-version` will automatically help `tfenv` select the version your project
+wants to use.
