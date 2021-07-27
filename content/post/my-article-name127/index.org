@@ -1,39 +1,55 @@
 #+title: Using Org Mode in Hugo
 #+summary: Take back blog power with OrgMode in Emacs
 #+subtitle: emacs everywhere
-#+date: 2019-08-02
+#+date: 2021-05-10
 #+draft: true
 #+tags[]: howto
 
-* this is new
-Things i wish i knew
+* OrgMode Blogging
+  This is the best thing I have seen in a really long time with regards to OrgMode and blogging. I have
+tried many thing things in the past with OrgMode and posting articles to various services which usually they end up breaking, getting
+deprecated, or are just confusing. This is simple. Make an *_index.org* file with some frontmatter at
+the top and you are good to go!
+** Frontmatter
+   Here is the example frontmatter of this document that sets some basic fields that are similar
+to the markdown frontmatter.
+ #+BEGIN_SRC
+ #+title: Using Org Mode in Hugo
+ #+summary: Take back blog power with OrgMode in Emacs
+ #+subtitle: emacs everywhere
+ #+date: 2019-08-02
+ #+draft: true
+ #+tags[]: howto
+ #+END_SRC
 
-- item 1
+** Why do it?
+   Eazy. OrgMode brings lots of features to editing notes in a text format. Can make a very easy argument
+about how text files will be supported for ever. This is the same for MarkDown, but OrgMode has way more
+features geared towards making outlines, tasks, links, topics, and even executing code to insert the results
+within the document. Oh and its just super fun. The organization tools of OrgMode... to blog? How could you
+turn that down?
+** Tables
+   Lets show of some tables. I just absolutly love how OrgMode makes composing tables so easy.
 
-#+BEGIN_SRC python
-def thing():
-  return true
+ #+CAPTION: This is my caption
+ | Key | Value                |
+ |-----+----------------------+
+ | 1,2 | Jim Butters was here |
+
+ #+PLOT: title:"Citas" ind:1 deps:(3) type:2d with:histograms set:"yrange [0:]"
+ | Sede      | Max cites | H-index |
+ |-----------+-----------+---------|
+ | Chile     |    257.72 |   21.39 |
+ | Leeds     |    165.77 |   19.68 |
+ | Sao Paolo |     71.00 |   11.50 |
+ | Stockholm |    134.19 |   14.33 |
+ | Morelia   |    257.56 |   17.67 |
+
+** Dates
+   Inserting and keeping track of dates is a new thing to me for OrgMode, but I have seen plenty of examles
+which show that tracking things inside OrgMode can be quite rewarding.
+
+#+BEGIN_SRC
+   DEADLINE: <2021-05-10 Mon>
+<2021-05-10 Mon>
 #+END_SRC
-
-#+CAPTION: This is my caption
-| Key | Value                | 
-|-----+----------------------+
-| 1,2 | Jim Butters was here |
-
-#+PLOT: title:"Citas" ind:1 deps:(3) type:2d with:histograms set:"yrange [0:]"
-| Sede      | Max cites | H-index |
-|-----------+-----------+---------|
-| Chile     |    257.72 |   21.39 |
-| Leeds     |    165.77 |   19.68 |
-| Sao Paolo |     71.00 |   11.50 |
-| Stockholm |    134.19 |   14.33 |
-| Morelia   |    257.56 |   17.67 |
-
-* topic1
-** topic2
-*** topic3
-- lets leave on [2020-02-14 Tue]
-** numbered list
-thing 1
-
-thing 2
