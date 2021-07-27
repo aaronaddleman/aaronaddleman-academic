@@ -48,7 +48,6 @@ for an improved position to allow for nimble growth and additions:
 | git config      | Set git per main directory for personal and professional projects                |
 | libsh           | My own tools that I have found useful for improving the shell experience         |
 | mkdocs          | Allows for easy documenting of projects using MarkDown                           |
-| nvm             | Allows me to select a Node version without disturbing the installed one          |
 | oh-my-zsh       | Has some good features for managing the ZSH prompt with prompts and plugins      |
 | powerline fonts | Makes my terminals look nice with icons and unicode characters                   |
 | pyenv           | Allows me to select python version without disturbing the installed one          |
