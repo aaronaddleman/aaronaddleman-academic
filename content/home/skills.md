@@ -82,6 +82,12 @@ subtitle = ""
   name = "Elixir"
   description = "2%"
 
+[[feature]]
+  icon = "rust-lang-icon"
+  icon_pack = "custom"
+  name = "Rust"
+  description = "0%"
+
 
 
 # Uncomment to use emoji icons.
