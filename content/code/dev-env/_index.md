@@ -55,3 +55,9 @@ for an improved position to allow for nimble growth and additions:
 | tfenv           | Allows me to select a Terraform version without disturbing the installed one     |
 | tgenv           | Allows me to select a Terragrunt version without disturbing the installed one    |
 | .editorconfig   | Align your team to the same settings of indenting/tabs-vs-spaces/etc...          |
+
+## Why I did this
+
+* when to use docker
+* being close to your editor
+* this is just what I do
