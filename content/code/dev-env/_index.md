@@ -35,6 +35,14 @@ for an improved position to allow for nimble growth and additions:
      - Less work for your shell to scan of directories of executables available
      - Clear understanding of what is taking presedence
      - Adding/Removing what is needed is very clear of wher its happening
+1. Before going to docker
+     - All of this is before going to docker, by that I mean you can choose your version(s) and then grab
+     the docker image you want to use
+     - Keeping the editor close to the REPL or pkgs: Your editor will work better when given the tools
+     it can find from an installed tool
+     - Experimenting
+     - Steps taken here result in docker layers later
+
 
 
 ## What I use
@@ -55,9 +63,3 @@ for an improved position to allow for nimble growth and additions:
 | tfenv           | Allows me to select a Terraform version without disturbing the installed one     |
 | tgenv           | Allows me to select a Terragrunt version without disturbing the installed one    |
 | .editorconfig   | Align your team to the same settings of indenting/tabs-vs-spaces/etc...          |
-
-## Why I did this
-
-* when to use docker
-* being close to your editor
-* this is just what I do
