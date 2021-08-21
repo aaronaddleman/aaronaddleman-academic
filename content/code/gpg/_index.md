@@ -70,3 +70,7 @@ Listing the signatures allows for showing the short form of the key id:
 ```
 gpg --list-signatures
 ```
+
+## Tools for macOS
+
+I like the GPG Tools suite over at https://gpgtools.org/ they are really handy and monitor the clipboard for any keys that exist. When you copy a private or public key while the application is open will prompt for importing.
