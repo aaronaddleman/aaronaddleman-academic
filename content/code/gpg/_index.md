@@ -64,3 +64,9 @@ pub   rsa4096 2017-03-04 [SC] [expires: 2022-08-28]
       0000000000000000000000000000000000000000
 uid           [ unknown] Aaron Z. Addleman <aaronaddleman@gmail.com>
 ```
+
+Listing the signatures allows for showing the short form of the key id:
+
+```
+gpg --list-signatures
+```
