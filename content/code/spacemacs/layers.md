@@ -1,25 +1,10 @@
 ---
-# Documentation: https://wowchemy.com/docs/managing-content/
-
 title: "Layers"
 linktitle: "Layers"
 summary: "Most features can be enabled with a Layer. While there are many, here are some that I think are a helpful based on types of projects."
 date: 2021-05-10T09:15:34-07:00
-lastmod: 2021-05-10T09:15:34-07:00
 draft: false  # Is this a draft? true/false
-toc: true  # Show table of contents? true/false
-type: docs  # Do not modify.
-
-# Add menu entry to sidebar.
-# - Substitute `example` with the name of your course/documentation folder.
-# - name: Declare this menu item as a parent with ID `name`.
-# - parent: Reference a parent ID if this page is a child.
-# - weight: Position of link in menu.
-menu:
-  spacemacs:
-    name: Layers
-    parent: Spacemacs
-    weight: 1
+type: book  # Do not modify.
 ---
 
 While there are many Layers on the main list of Spacemacs Layers, there are some that I have to have lots of return on your investment of time. I have tried
@@ -52,8 +37,36 @@ Warning.. this layer is quite complex and I really need a cheatsheet for myself 
 Getting ready for projects with Spacemacs can be easy and others can be a little more complex. But never
 fear! The docs are here!... below... split up by components of your stack...
 
-### Docker
-
 ### Python
 
+* pyenv
+* pylint
+
 ### GoLang
+
+Getting the most out of Spacemacs for writing GoLang starts with the layers instructions:
+
+https://develop.spacemacs.org/layers/+lang/go/README.html
+
+```bash
+go_install_for_spacemacs() {
+    if [ "$(command -v go 2>/dev/null)" ]; then
+        go get -u -v github.com/mdempsky/gocode
+        go get -u -v github.com/rogpeppe/godef
+        go get -u -v golang.org/x/tools/cmd/guru
+        go get -u -v golang.org/x/tools/cmd/gorename
+        go get -u -v golang.org/x/tools/cmd/goimports
+        go get -u -v golang.org/x/tools/cmd/godoc
+        go get -u -v github.com/zmb3/gogetdoc
+        go get -u -v github.com/cweill/gotests/...
+        go get -u github.com/haya14busa/gopkgs/cmd/gopkgs
+        go get -u -v github.com/davidrjenni/reftools/cmd/fillstruct
+        go get -u github.com/josharian/impl
+    fi
+}
+
+[ -d $HOME/go ] && export GOPATH="$HOME/go" || __debug "could not find $HOME/go"
+[ -d $GOPATH ] && export PATH=$PATH:$GOPATH/bin
+[ -d /usr/lib/go ] && export GOROOT="/usr/lib/go" || __debug "unable to find /usr/lib/go"
+[ -d /usr/local/go ] && export GOROOT="/usr/local/go" || __debug "unable to find /usr/local/go"
+```
