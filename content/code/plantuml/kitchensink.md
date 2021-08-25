@@ -2,17 +2,10 @@
 title: Kitchen Sink
 linktitle: Kitchen Sink
 toc: true
-type: docs
+type: book
 tags: []
 date: "2020-11-07T07:28:00Z"
 draft: false
-menu:
-  Plantuml:
-    parent: Plantuml
-    weight: 2
-
-# Prev/next pager order (if `docs_section_pager` enabled in `params.toml`)
-weight: 2
 ---
 
 ## kitchen sink

@@ -1,19 +1,21 @@
 ---
-# Documentation: https://wowchemy.com/docs/managing-content/
+## Documentation: https://wowchemy.com/docs/managing-content/
 
 title: "Docs"
 linktitle: "GoLang Docs"
 summary: "Information on GoLang"
 date: 2020-12-15T09:14:27-08:00
 lastmod: 2020-12-15T09:14:27-08:00
-draft: false  # Is this a draft? true/false
-toc: true  # Show table of contents? true/false
-type: book  # Do not modify.
+draft: false  ## Is this a draft? true/false
+toc: true  ## Show table of contents? true/false
+type: book  ## Do not modify.
 ---
 
 The docs command pull comments from packages and contribute to the help documentation utility. Below are some examples of the Json.
 
-## about the method of the object
+## Documentation
+
+### about the method of the object
 
 Get documents for the method of Decode on the Deocoder object
 
@@ -29,7 +31,7 @@ func (dec *Decoder) Decode(v interface{}) error
     into a Go value.
 ```
 
-## about the object
+### about the object
 
 Get documents about the json.Decoder object
 
@@ -52,7 +54,7 @@ func (dec *Decoder) Token() (Token, error)
 func (dec *Decoder) UseNumber()
 ```
 
-## about the package
+### about the package
 
 ```go
 ➜ go doc json
@@ -92,7 +94,7 @@ type UnsupportedTypeError struct{ ... }
 type UnsupportedValueError struct{ ... }
 ```
 
-# Modules
+## Modules
 
 To make a new module
 
@@ -110,9 +112,9 @@ go run github.com/pluralsight/webservice
 
 This also sets us up for running a go program in more standard way.
 
-# Declaration and Primitives
+## Declaration and Primitives
 
-# Pointers
+### Pointers
 
 ```go
 func main() {
@@ -145,7 +147,7 @@ func main() {
 
 When declaring variables, its a pointer to a value. Pointers are variables that hold a location of data in memory in another location.
 
-## create a variable with empty string
+### create a variable with empty string
 
 This calls a var with no variable. The `*string` is setting the var as a "pointer" by using the `*` in front of `string`.
 
@@ -153,7 +155,7 @@ the output should give "<nil>"
 	// this means the pointer contains a empty string
 	//
 
-### attempt #1
+#### attempt #1
 
 ```go
 func main() {
@@ -174,7 +176,7 @@ If you try to set its value, you will get an error because you are trying to set
 
 ---
 
-### attempt #2
+#### attempt #2
 
 You could try to dereference the data by reaching through the pointer, grabbing the data, and getting it back, but this will results in an error.
 
@@ -202,7 +204,7 @@ exit status 2
 
 ---
 
-### attempt #3 - solution #1
+#### attempt #3 - solution #1
 
 ```go
 func main() {
@@ -227,7 +229,7 @@ func main() {
 
 ---
 
-### attempt #4 - solution #2
+#### attempt #4 - solution #2
 
 ```go
 func main() {
@@ -251,18 +253,18 @@ func main() {
 
 ---
 
-### Conclusions
+#### Conclusions
 
 1. You can use pointers, but declare them first with a type
 2. If you update the data that the pointer is referencing, the pointer address will not change. Only the data will change.
 
 Go does not support pointer arithmetic
 
-# Constants
+### Constants
 
 Difference between constants and variables is that constants **cannot** change their value over time.
 
-### how to declare
+#### how to declare
 
 ```go
 func main() {
@@ -270,7 +272,7 @@ func main() {
 }
 ```
 
-### if you assign.. you get an error
+#### if you assign.. you get an error
 
 ```go
 func main() {
@@ -285,7 +287,7 @@ cannot assign to pi
 
 ---
 
-### implicit type constant
+#### implicit type constant
 
 Following example show how a constant will interpolate the type based on its data.
 
@@ -333,19 +335,19 @@ func main() {
 4.2
 ```
 
-### rules...
+#### rules...
 
 - When you declare them, you must initialize them at the time of declaring them. It has to be on the same line. It also has to be determined at the **compile** time. Not at run time.
 
 ---
 
-### Conclusions
+#### Conclusions
 
 1. Declare and initiaze them on same line
 2. Determined at compile time. Not run time.
 3. Its possible convert constants to different data types.
 
-# Iota and Constant Expressions
+## Iota and Constant Expressions
 
 To work with Iota and constant expressions, the constants must exist at the package level. Note how they are outside of the `func main()`
 
@@ -466,13 +468,13 @@ func main() {
 0 1 0
 ```
 
-## Conclusions
+### Conclusions
 
 Iotas help transform constants.
 
 Remember, constants must be evaluated at compile time.
 
-## Summary
+### Summary
 
 1. Can declare variables being implicite
 2. Pointers have lots of power
@@ -482,18 +484,18 @@ Remember, constants must be evaluated at compile time.
         1. Allows for dynamic values at compile time
     2. Constant expressions
 
-# Working with collections
+## Working with collections
 
-## Overview
+### Overview
 
 1. Array
 2. Slices (popular)
 3. Maps
 4. Structs (similar to a class)
 
-## Arrays
+### Arrays
 
-### Creating
+#### Creating
 
 ```go
 package main
@@ -522,7 +524,7 @@ func main() {
 
 ---
 
-### Another way to use arrays (shorter)
+#### Another way to use arrays (shorter)
 
 ```go
 package main
@@ -548,11 +550,11 @@ func main() {
 
 ---
 
-## Slices
+### Slices
 
 They are built on top of arrays. The slice can be thought of as a pointer. Good for working with an API and select what you want.
 
-### method 1
+#### method 1
 
 ```go
 package main
@@ -579,7 +581,7 @@ func main() {
 
 ---
 
-### method 2
+#### method 2
 
 Below the slice and the array are keeping to the same item in memory
 
@@ -612,7 +614,7 @@ func main() {
 
 ---
 
-### method 3
+#### method 3
 
 Better way to define slices
 
@@ -648,7 +650,7 @@ func main() {
 
 ---
 
-### getting ranges of elements from an array
+#### getting ranges of elements from an array
 
 ```go
 package main
@@ -689,7 +691,7 @@ func main() {
 
 ---
 
-## maps
+### maps
 
 Keys to values
 
@@ -733,7 +735,7 @@ map[]
 
 ---
 
-## structs
+### structs
 
 Possible to associate any type of data together. Fields are fixed at compile time.
 
@@ -852,13 +854,13 @@ func main() {
 
 ---
 
-## additions
+### additions
 
 1. Possible to move structs outside of main to be at the package level
 
 ---
 
-# Packages
+## Packages
 
 By creating a directory inside your main code location, you are creating a package. To interact with the package, call the package with the import command
 
@@ -909,7 +911,7 @@ var (
 
 ---
 
-# Functions and Methods
+## Functions and Methods
 
 - Functions
     - Arguments and Parameters
@@ -917,14 +919,14 @@ var (
 - Methods
 - Interfaces
 
-## Functions
+### Functions
 
 ```go
 func nameofFunc() {
 }
 ```
 
-### invoking functions
+#### invoking functions
 
 Below is invoking the function of `startWebServer`
 
@@ -955,7 +957,7 @@ server started
 
 ---
 
-### parameters
+#### parameters
 
 Below shows how to define a function with a parameter an the format.
 
@@ -989,7 +991,7 @@ server started on port 3000
 
 ---
 
-### multiple parameters
+#### multiple parameters
 
 ```go
 package main
@@ -1023,7 +1025,7 @@ Number of retries 2
 
 ---
 
-### multiple parameters with shorter form
+#### multiple parameters with shorter form
 
 ```go
 // define the function with a defined parameter
@@ -1041,7 +1043,7 @@ func startWebServer(port, numberOfRetries int) {
 
 ---
 
-## Returning data
+### Returning data
 
 Define the type of data after the parameters. Below is an example.
 
@@ -1089,7 +1091,7 @@ true
 
 ---
 
-### returning an error from a function
+#### returning an error from a function
 
 Hear the calling function can decide what to do with the returned value.
 
@@ -1120,7 +1122,7 @@ func startWebServer(port, numberOfRetries int) error {
 
 ---
 
-### demo of an error
+#### demo of an error
 
 ```go
 package main
@@ -1156,7 +1158,7 @@ something went wrong
 
 ---
 
-### returning multiple values of information
+#### returning multiple values of information
 
 ```go
 package main
@@ -1196,7 +1198,7 @@ server started on port 3000
 
 ---
 
-### what if a function returns a value but you dont need it
+#### what if a function returns a value but you dont need it
 
 go provides a write only variable called as `_`
 
@@ -1244,7 +1246,7 @@ server started on port 3000
 
 ---
 
-## methods
+### methods
 
 an example of a method is one of the following
 
@@ -1274,7 +1276,7 @@ func (uc userController) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 
 ---
 
-## binding data with constructors
+### binding data with constructors
 
 ```go
 package controllers
@@ -1322,7 +1324,7 @@ func newUserController() *userController {
 
 ---
 
-## interfaces
+### interfaces
 
 These are very powerful. More than other languages.
 
@@ -1368,7 +1370,7 @@ func RegisterControllers() {
 
 ---
 
-## implementing the http server
+### implementing the http server
 
 main.go
 
@@ -1529,13 +1531,13 @@ func AddUser(u User) (User, error) {
 
 ```
 
-# Controlling Program Flow
+## Controlling Program Flow
 
-## Looping
+### Looping
 
 All loops are using the `for` loop
 
-### Loop till condition
+#### Loop till condition
 
 ```go
 package main
@@ -1611,7 +1613,7 @@ continuing..
 
 ---
 
-### Loop til condition with post clause
+#### Loop til condition with post clause
 
 ```go
 package main
@@ -1643,7 +1645,7 @@ func main() {
 
 ---
 
-### Infinite Loops
+#### Infinite Loops
 
 ```go
 package main
@@ -1679,7 +1681,7 @@ func main() {
 
 ---
 
-### Loop over collections
+#### Loop over collections
 
 ```go
 package main
@@ -1768,13 +1770,13 @@ https 443
 443
 ```
 
-## Branching
+### Branching
 
 ```go
 
 ```
 
-### Panics
+#### Panics
 
 Usually error values are helpful. Eventually, you will find a state where you need to state the app cannot run function.
 
@@ -1788,7 +1790,7 @@ It is possible to recover from panics.
 
 [Effective Go](https://golang.org/doc/effective_go.html#recover)
 
-### If Statements
+#### If Statements
 
 ```go
 package main
@@ -1829,7 +1831,7 @@ func main() {
 }
 ```
 
-### Switches
+#### Switches
 
 ```go
 package main
