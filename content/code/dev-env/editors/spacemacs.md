@@ -99,3 +99,7 @@ Here is a list of features that I appreciate so much inside Spacemacs:
 | magit           | (From Melpa) lets you commit to Git really really fast                                                                                                                     |
 | SPC - [0-9]     | Select a window from 0 to 9 making navigation really fast                                                                                                                  |
 | VTerm           | (not really unique) Show a really advanced shell for Emacs to issue shell commands but also switch to view mode for selecting text allowing to select text for documenting |
+
+## More detail...
+
+This is just a summary of what I enjoy about Spacemacs. To see a full article about it all, head on over to my [code page about Spacemacs](/code/spacemacs)
