@@ -10,7 +10,7 @@ categories: ["organization"]
 date: 2021-08-27T21:14:39-07:00
 lastmod: 2021-08-27T21:14:39-07:00
 featured: false
-draft: true
+draft: false
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
@@ -30,18 +30,20 @@ projects: []
 
 **tl;dr**
 
-> It takes 10k hours to become an expert. Well sometimes I dont need to become an expert. I just need to be familiar. So Im going to commit 20 hours.
+> It takes 10k hours to become an expert. Well sometimes I don't need to become an expert. I just need to be familiar. So I'm going to commit 20 hours.
 
 Make 3 databases that track your notes in tasks as you log progress in a project which is related to goals to reach your desired time. Each goal has their own amount of hours you want to dedicate for learning or completing.
 
 ## Summary
 
-Taking notes, making progress, its what helps us measure when we grow. What did I learn when I read/watched that thing? How much have I done with this one project? These were questions that came up while inventing projects to work on. What goals does this project contribute while completing these tasks? What tasks should I do that move me closer to the goals I want to complete? Well, beyond these words I will go into how I built a nice system to answer all these questions as I want to learn more topics that align with my interests.
+Taking notes, making progress, its what helps us measure when we grow. What did I learn when I read/watched that thing? How much have I done with this one project? These were questions that came up while inventing projects to work on. What goals does this project contribute while completing these tasks? What tasks should I do that move me closer to the goals I want to complete?
+
+Beyond these words I will go into how I built a nice system to answer all these questions as I want to learn more topics that align with my interests.
 
 
 ## The system
 
-No, its not a "the super system" idea or a "GTD" type thing. It is just a combination of 3 databases that interact with each other. Do I keep tasks in Notion to remind me of what is next? The answer is no I do not do this. Notion helps be the place to capture things I am *working on* as a infinit notebook with a calendar, projects, tasks (maybe even considered assignments that have notes attached to them) with metadata of estimated hours and logged hours (more on that below).
+No, its not "the super system" idea or a "GTD" type thing. It is just a combination of 3 databases that interact with each other. Do I keep tasks in Notion to remind me of what is next? The answer is no. Notion helps be the place to capture things I am *working on* as a infinite notebook with a calendar, projects, tasks (maybe even considered assignments that have notes attached to them) with metadata of estimated hours and logged hours (more on that below).
 
 ## What is notion.so
 
@@ -53,7 +55,7 @@ Having projects is great because they are focused on one specific thing with a v
 
 ## How does it work
 
-I have three tables which are called _Projects_, _Tasks_, and _Goals_. Each one of the tables has few or many fields that related to the others. Some are straight forward while others are rollups which allow you to select records from another table as reference. All of this allows you to build a complete picture of what goals you want to accomplish that have tasks, which are driven by goals you want to achieve. When done this way, you will end up with a list of tasks _that you want to do_ which move your progress to completing projects which align with your goals.
+I have three tables which are called _Projects_, _Tasks_, and _Goals_. Each one of the tables has few or many fields that related to the others. Some are straight forward while others are roll-ups which allow you to select records from another table as reference. All of this allows you to build a complete picture of what goals you want to accomplish that have tasks, which are driven by goals you want to achieve. When done this way, you will end up with a list of tasks _that you want to do_ which move your progress to completing projects which align with your goals.
 
 Below are sub sections for each table with their columns and description of how their relationship work with each other. For added explanation, I have also added a diagram to illustrate the relationships each table have. This took a bit of time and realized the tool I have selected for diagraming the fields relationships made for very confusing diagram if all displayed at once. So I decided to break up the relationships by each table. At the bottom, I show the entire picture that I find very confusing if that is of any help to you.
 
@@ -62,22 +64,34 @@ Inside of Notion's databases, you can define columns of many different types. Mo
 
 ### Create some goals
 
-What do you want to learn over many years? This is the table where you list things you want to log 1200 minutes. Ever heard the expression it takes 10000 hours? Well, thats if you want to become an expert, and in the process its your future career.  If thats the case, I raise my glass to you and cheer you on. But if you want to just get a little more familiure with a topic or skill, I have picked up people suggesting 20 hours, which equals 1200 minutes. This field can be altered for each goal which makes the system so customizable!
+What do you want to learn over many years? This is the table where you list things you want to log 1200 minutes. Ever heard the expression it takes 10000 hours? Well, thats if you want to become an expert, and in the process its your future career.  If thats the case, I raise my glass to you and cheer you on. But if you want to just get a little more familiar with a topic or skill, I have picked up people suggesting 20 hours, which equals 1200 minutes. This field can be altered for each goal which makes the system so customizable!
 
-| Name                 | Tasks                       | Total Logged                               | Total Est                                    | 1200 min?          | Last Changed                    | Related to Projects      |
-| :--                  | :--                         | :--                                        | :--                                          | :--                | :--                             | :--                      |
-| The name of the goal | Relationship to Tasks table | Rollup of Tasks log min caculated with sum | Rollup of Tasks est. min calculated with sum | Formula: see below | Not really used, just more info | Relationship to Projects |
+Name
+: Name of the goal
 
-*1200 min? Formula* is used to caclculate a total number of minutes contributed to this goal. This is based from the column of _total logged_ which holds the sum of minutes of related tasks for this goal.  Here is the formula that works for me in Notion:
+Tasks
+: Relationship to Tasks table
 
-```
-if(prop("Total logged") > 1200, "yes", "no")
-```
+Total Logged
+: Rollup of Tasks log min calculated with sum
 
-*Why minutes?* you might be asking. Well I have plans in the future to log progress as I continue my goals and wanted to a very simple way to caclculate the progress. I think also a ton of time has passed and I have forgotten about some other reasons. Perhaps some innovation could be applied here with your implementation.
+Total Est
+: Rollup of Tasks est. min calculated with sum
+
+1200 min?
+: Formula calculating the total minutes completed. `if(prop("Total logged") > 1200, "yes", "no")`
+
+Last Changed
+: Not really used, just more info
+
+Related to Projects
+: Relationship to Projects
 
 
-```plantuml
+*Why minutes?* you might be asking. Well I have plans in the future to log progress as I continue my goals and wanted to a very simple way to calculate the progress. I think also a ton of time has passed and I have forgotten about some other reasons. Perhaps some innovation could be applied here with your implementation.
+
+
+```plantuml goals.png
 @startuml
 
 map project {
@@ -121,10 +135,20 @@ goals::projects -r-> project::name
 
 Project based work is great because its very specific with its goal: Make this thing. It should be short and to the point. Ideally 1-5 months, but that is my opinion. Lets use learning a new language as an example. The name of the project would be *_Learn Spanish - Small Talk_*. This project would be associated with a goal of something like "Speak different Languages" or "Fluent in Spanish". The goals part is really trying to give a number to how many hours across multiple projects. This gives us the ability to create projects of specific end states. Speaking Spanish might just be one project and another could be writing Spanish.
 
-| Name                            | Goals                                       | Related to Tasks                                             | total minutes                      | Status                    |
-| :--                             | :--                                         | :--                                                          | :--                                | :--                       |
-| What is the name of the project | What goals does this project apply towards? | What tasks are needed to get doen to call this project doen? | Relationship to tasks #log minutes | Backlog, InProgress, Done |
+Name
+: Name of the projct
 
+Goals
+: What goals does this project apply towards?
+
+Related to tasks
+: What tasks are needed to get done to call this project done?
+
+Total minutes
+: Relationship to tasks #log minutes
+
+Status
+: Backlog, InProgress, or Done
 
 ```plantuml
 @startuml
@@ -169,6 +193,27 @@ project::goals -r-> goals::name
 
 This is where you get down to the fine detail of each task you want to capture. Here is where you have both a task to complete and the ability to link it to a notebook for tracking progress. If your notes are directly related to the specific task, then keep them in the task. However, if you want to use these notes in the future and not sift or search inside your tasks, I _*highly suggest*_ to not keep your notes inside the task.
 
+Name
+: Name of the task
+
+Status
+: Backlog, InProgress, or Done
+
+Est. Minutes
+: How many minutes do you think it will take?
+
+Date
+: When is it due or scheduled
+
+Goal
+: What goal is it associated with? This might be redundant. Its up to you if you want more information.
+
+Projects
+: What project is this related to?
+
+Project Status
+: Rollup from the Project status field. Helpful for filtering the Tasks by what status the projects are in.
+
 ## The diagram
 
 ```plantuml
@@ -207,8 +252,3 @@ tasks::goals --> goals::name
 
 @enduml
 ```
-
-
-## Can I make one just like yours?
-
-I have copied the system to a blank area in my Notion account that you can duplicate if you are curious.
