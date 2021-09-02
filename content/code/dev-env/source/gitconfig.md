@@ -45,7 +45,11 @@ Then in my `$HOME/.gitconfig-personal`, I use the following content:
 ```
 [user]
 name = Aaron Addleman
-email = the_email_address_that_i_use@site.com
+email = aaronaddleman@gmail.com
+signingkey = FCF6C3A2140015F9
+
+[commit]
+gpgSign = true
 ```
 
 The other file of `$HOME/.gitconfig-work` shares the same name, but a different email address. This helps
