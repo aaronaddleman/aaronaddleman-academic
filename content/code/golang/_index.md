@@ -17,6 +17,8 @@ The GoLang, Go, or Go Language, is a very nice language used by many projects. S
 
 [Rob Pike interview for Evrone: "Go has become the language of cloud infrastructure"](https://evrone.com/rob-pike-interview)
 
+[Bugs](https://www.dolthub.com/blog/2021-09-03-golang-time-bugs/)
+
 ## Tools
 
 ### Tracing
@@ -41,18 +43,30 @@ I like to stay away from global installs of my tools and this is another one of 
 
 ## Setup
 
-To get your environment setup, there needs to be some things installed. The following packages are helpful:
+### Installation
+
+I really like to use shell scripts to take care of all my setups. So, I am going to tell you (as well as myself) to use the [LibSh Project](/project/libsh) file called [go.sh](https://github.com/aaronaddleman/libsh/blob/master/go.sh) which should have a utility to do installation. Currently the function is called `go_install_goenv` which gives you the ability to select Go versions.
+
+After you have this installed `LibSh` should pick it up and load it and give you the necessary settings for your environment to continue working.
+
+Here are a couple of things to check your environment is good to Go (see what I did there? yah that was a pun on purpose...)
+
+* Checking what Go can see
+
+This is the command that will dump a ton of things, but of the output we are looking for *GOPATH* and *GOROOT*. These variables will need to point to the same version you want to use. If they do not line up, then set with `goenv local #.#.#` to set your version for the project, or use `goenv global #.#.#` to set globally.
 
 ```
-go get -u -v github.com/mdempsky/gocode
-go get -u -v github.com/rogpeppe/godef
-go get -u -v golang.org/x/tools/cmd/guru
-go get -u -v golang.org/x/tools/cmd/gorename
-go get -u -v golang.org/x/tools/cmd/goimports
-go get -u -v golang.org/x/tools/cmd/godoc
-go get -u -v github.com/zmb3/gogetdoc
-go get -u -v github.com/cweill/gotests/...
-go get -u github.com/haya14busa/gopkgs/cmd/gopkgs
-go get -u -v github.com/davidrjenni/reftools/cmd/fillstruct
-go get -u github.com/josharian/impl
+# set version in .go-version
+goenv local 1.15.7
+# check version
+go version
+# output should be:
+# go version go1.15.7 darwin/amd64
+#
+# check go env
+go env | grep -E "PATH|ROOT"
+
+# output should be:
+GOPATH="/Users/addlema/go/1.15.7"
+GOROOT="/Users/addlema/.goenv/versions/1.15.7"
 ```
