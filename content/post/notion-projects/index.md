@@ -143,42 +143,35 @@ Total minutes
 Status
 : Backlog, InProgress, or Done
 
-```plantuml
-@startuml
 
-map project {
-  name => "name of the project"
-  tasks => "related tasks"
-  goals => "related goals"
-}
+<div class="mermaid">
+classDiagram
+  class Project {
+    name : name_of_the_project
+    tasks : related_tasks
+    goals : related_goals
+  }
+  class Tasks {
+    name : name_of_the_task
+    log_min : num_of_min_logged
+    status : todo,inprogress,done
+    est_min : est.minutes_to_complete
+    date : date_due
+    goals : related_goals
+  }
+  class Goals {
+  name : name_of_goal
+  total_logged : total_min_logged
+  total_est : total_est._min
+  tasks : list_of_tasks
+  tags : just_some_tags
+  1200_min? : is:_total_logged_>_1200
+  projects : related_projects
+  }
+  Project --> "many" Tasks : Contains
+  Project --> "many" Goals : Related_Projects
+</div>
 
-map tasks {
-  name => "name of the task"
-  log_min => "num of min logged"
-  status => "todo, inprogress, done"
-  est_min => "est. minutes to complete"
-  date => "date due"
-  goals => "related goals"
-}
-
-map goals {
-  name => "name of goal"
-  total_logged => "total min logged"
-  total_est => "total est. min"
-  tasks => "list of tasks"
-  tags => "just some tags"
-  1200_min? => "is: total logged > 1200"
-  projects => "related projects"
-}
-
-project::tasks -l-> tasks::name
-project::goals -r-> goals::name
-'goals::tasks --> tasks::name
-'goals::projects --> project::name
-'tasks::goals --> goals::name
-
-@enduml
-```
 
 ### Now make some tasks
 
@@ -209,39 +202,34 @@ Project Status
 
 ## The diagram
 
-```plantuml
-@startuml
 
-map project {
-  name => "name of the project"
-  tasks => "related tasks"
-  goals => "related goals"
-}
-
-map tasks {
-  name => "name of the task"
-  log_min => "num of min logged"
-  status => "todo, inprogress, done"
-  est_min => "est. minutes to complete"
-  date => "date due"
-  goals => "related goals"
-}
-
-map goals {
-  name => "name of goal"
-  total_logged => "total min logged"
-  total_est => "total est. min"
-  tasks => "list of tasks"
-  tags => "just some tags"
-  1200_min? => "is: total logged > 1200"
-  projects => "related projects"
-}
-
-project::tasks -l-> tasks::name
-project::goals -r-> goals::name
-goals::tasks --> tasks::name
-goals::projects --> project::name
-tasks::goals --> goals::name
-
-@enduml
-```
+<div class="mermaid">
+classDiagram
+  class Project {
+    name : name_of_the_project
+    tasks : related_tasks
+    goals : related_goals
+  }
+  class Tasks {
+    name : name_of_the_task
+    log_min : num_of_min_logged
+    status : todo,inprogress,done
+    est_min : est.minutes_to_complete
+    date : date_due
+    goals : related_goals
+  }
+  class Goals {
+  name : name_of_goal
+  total_logged : total_min_logged
+  total_est : total_est._min
+  tasks : list_of_tasks
+  tags : just_some_tags
+  1200_min? : is:_total_logged_>_1200
+  projects : related_projects
+  }
+  Project --> "many" Tasks : Reference
+  Project --> "many" Goals : Related_Projects
+  Goals --> "many" Tasks : Related_Goals
+  Goals --> "many" Project : Related_Goals
+  Tasks --> "many" Goals : List_of_Tasks
+</div>
