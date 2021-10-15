@@ -200,3 +200,9 @@ expected output
 PASS
 ok      golang-temperature-converter-cli        0.499s
 ```
+
+## testing multiples
+
+```
+go test -v ./module1 ./module2
+```
