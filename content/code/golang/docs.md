@@ -92,6 +92,17 @@ As such there are also predefined identifiers:
 
 The _ is a blank identifer and when used, its value gets automatically discarded.
 
+### naming things
+
+Best pattern for naming variables or functions, or really just any user defined indentifiers is to use these rules:
+
+* methods or functions which is named as a noun
+* to change an object, use "SetName"
+* MixedCaps or mixedCaps
+* no underscores
+* no long names
+* no indication of the package, but just name) located in the main package
+
 ### about the method of the object
 
 Get documents for the method of Decode on the Deocoder object
@@ -998,8 +1009,23 @@ var (
 
 ### Functions
 
+very simple function
+
 ```go
 func nameofFunc() {
+}
+```
+
+function with params and ret1 is returned as type1
+
+```go
+func nameOfFunc(param1 type1, param2 type2, ...) ret1 type1 {
+}
+```
+funciton with params and returning multiple variables
+
+```go
+func nameOfFunc(param1 type1, param2 type2, ...) (ret1 type1, ret2 type2, ...) {
 }
 ```
 
