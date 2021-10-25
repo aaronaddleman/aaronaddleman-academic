@@ -15,6 +15,83 @@ The docs command pull comments from packages and contribute to the help document
 
 ## Documentation
 
+### reserved words
+
+These following words are reserced and cannot be used as functions, vars, or other things:
+
+* break
+* default
+* func
+* interface
+* select
+* case
+* defer
+* go
+* map
+* struct
+* chan
+* else
+* goto
+* package
+* switch
+* const
+* fallthrough
+* if
+* range
+* type
+* continue
+* for
+* import
+* return
+* var
+
+### predefined identifiers
+
+All things that are given a name by the user is an identifier. Variables, functions, templates, a class, etc. These are case sensitive and must begin with a letter of the UTF-8 family.
+
+As such there are also predefined identifiers:
+
+* append
+* bool
+* byte
+* cap
+* close
+* complex
+* complex64
+* complex128
+* copy
+* false
+* float32
+* float64
+* imag
+* int
+* int8
+* int16
+* int32
+* int64
+* iota
+* len
+* make
+* new
+* nil
+* panic
+* print
+* println
+* real
+* recover
+* string
+* true
+* uint
+* uint8
+* uint16
+* uint32
+* uint64
+* uintptr
+
+### blank identifer
+
+The _ is a blank identifer and when used, its value gets automatically discarded.
+
 ### about the method of the object
 
 Get documents for the method of Decode on the Deocoder object
