@@ -2,16 +2,9 @@
 title: Spring Boot
 linktitle: Spring Boot
 toc: true
-type: docs
+type: book
 date: "2020-11-07T11:03:25-0800"
 draft: false
-menu:
-  java:
-    parent: frameworks
-    weight: 1
-
-# Prev/next pager order (if `docs_section_pager` enabled in `params.toml`)
-weight: 1
 ---
 
 Notes about the SpringBoot framework in specific. Some of these topics

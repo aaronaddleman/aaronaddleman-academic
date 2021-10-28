@@ -2,16 +2,9 @@
 title: Unresolved Compilation
 linktitle: Errors
 toc: true
-type: docs
+type: book
 date: "2019-05-05T00:00:00Z"
 draft: false
-menu:
-  java:
-    parent: errors
-    weight: 1
-
-# Prev/next pager order (if `docs_section_pager` enabled in `params.toml`)
-weight: 1
 ---
 
 List of errors that I have ran into across the vast great plains of
