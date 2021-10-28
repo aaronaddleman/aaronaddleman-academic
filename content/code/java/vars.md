@@ -2,16 +2,9 @@
 title: Vars
 linktitle: vars
 toc: true
-type: docs
+type: book
 date: "2020-11-23T10:10Z"
 draft: false
-menu:
-  java:
-    parent: Java
-    weight: 2
-
-# Prev/next pager order (if `docs_section_pager` enabled in `params.toml`)
-weight: 2
 ---
 
 ## variables

@@ -2,16 +2,9 @@
 title: Math
 linktitle: math
 toc: true
-type: docs
+type: book
 date: "2020-11-23T10:10Z"
 draft: false
-menu:
-  java:
-    parent: Java
-    weight: 3
-
-# Prev/next pager order (if `docs_section_pager` enabled in `params.toml`)
-weight: 3
 ---
 
 ## math operators
@@ -26,8 +19,8 @@ You will get a result from the operation
 
 Decrease or increase the value by replacing the original value of the variable.
 
-placing the operator before the variable 
-placing the operator after the variable, 
+placing the operator before the variable
+placing the operator after the variable,
 
 ```java
         int someValue = 5;
@@ -36,7 +29,7 @@ placing the operator after the variable,
         // also prints out 6 because the variable was updated
         System.out.println(someValue);
         int someOtherValue = 5;
-        // this increments the number, but the printout will show 
+        // this increments the number, but the printout will show
         // 5 because its a postfix operation
         System.out.println(someOtherValue++);
         // this will print out the resulting value of 6
@@ -139,4 +132,3 @@ Integer to a floating point, precision may be lost. Here is an example below:
         float intValueTwo = (float) longValueTwo;
         System.out.println(intValueTwo); // 2.03479347E9
 ```
-

@@ -2,16 +2,10 @@
 title: Conditional Logic
 linktitle: cond_logic
 toc: true
-type: docs
+type: book
 date: "2020-11-23T10:10Z"
 draft: false
-menu:
-  java:
-    parent: Java
-    weight: 4
-
-# Prev/next pager order (if `docs_section_pager` enabled in `params.toml`)
-weight: 4
+summary: Conditional Logic
 ---
 
 ## conditional logic
@@ -154,9 +148,8 @@ A variable defined within a block statement is not visible outside of the block.
 ```
 
 ```text
-Exception in thread "main" java.lang.Error: Unresolved compilation problem: 
+Exception in thread "main" java.lang.Error: Unresolved compilation problem:
         avg cannot be resolved to a variable
 
         at com.pluralsight.organized.Main.main(Main.java:15)
 ```
-
