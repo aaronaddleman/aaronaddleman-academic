@@ -42,10 +42,10 @@ FAIL    personal-budget/module2 0.693s
 FAIL
 ```
 
-The most important part of the error which is showing a couple of things:
+I found some of the following things of this panic runtime error:
 
 1. the path of the object and the function
-1. the path of the file and the line number
+1. the path of the file and the line number, which is `81`
 1. the way this function got called from the top to the bottom
 
 ```
@@ -58,3 +58,11 @@ The code that caused it
 ```
 newBudget.Max = max
 ```
+
+The fix is actually supposed to be this:
+
+```
+newBudget = &Budget{Max: max}
+```
+
+Which is settings a variable to be the `Struct`'s address and assigning the `Max` attribute with the value that is stored in `max`.
