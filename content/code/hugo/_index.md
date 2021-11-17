@@ -194,3 +194,20 @@ Putting text inside of ` ``` ` and ` ``` ` will mark the text as code.
 
 I found this really cool [project allows commenting with github issues for commenting](https://utteranc.es/).
 Some day I will install it, but for now I am good.
+
+## Known Errors
+
+### tcode: template for shortcode "list_children" not found
+
+Not too long ago I came across this error:
+
+```
+tcode: template for shortcode "list_children" not found
+```
+
+which caused me to get sort of worried. Well, after some searching around, I found the solution to be the following:
+
+```
+hugo mod clean
+hugo mod get -u ./...
+```
