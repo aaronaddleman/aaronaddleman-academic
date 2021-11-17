@@ -1,0 +1,139 @@
+#+title: Using Org Mode in Hugo
+#+summary: Take back blog power with OrgMode in Emacs
+#+subtitle: emacs everywhere
+#+date: 2021-05-10
+#+draft: true
+#+tags[]: howto
+#+REVEAL_ROOT: file://./assets/reveal.js-master
+
+* OrgMode Blogging
+  This is the best thing I have seen in a really long time with regards to OrgMode and blogging. I have
+tried many thing things in the past with OrgMode and posting articles to various services which usually they end up breaking, getting
+deprecated, or are just confusing. This is simple. Make an *_index.org* file with some frontmatter at
+the top and you are good to go!
+
+** Frontmatter
+
+   Here is the example frontmatter of this document that sets some basic fields that are similar
+to the markdown frontmatter.
+ #+BEGIN_SRC
+ #+title: Using Org Mode in Hugo
+ #+summary: Take back blog power with OrgMode in Emacs
+ #+subtitle: emacs everywhere
+ #+date: 2019-08-02
+ #+draft: true
+ #+tags[]: howto
+ #+END_SRC
+
+** Why do it?
+
+   Eazy. OrgMode brings lots of features to editing notes in a text format. Can make a very easy argument
+about how text files will be supported for ever. This is the same for MarkDown, but OrgMode has way more
+features geared towards making outlines, tasks, links, topics, and even executing code to insert the results
+within the document. Oh and its just super fun. The organization tools of OrgMode... to blog? How could you
+turn that down?
+
+** Tables
+   Lets show of some tables. I just absolutly love how OrgMode makes composing tables so easy.
+
+ #+CAPTION: This is my caption
+ | Key | Value                |
+ |-----+----------------------+
+ | 1,2 | Jim Butters was here |
+
+ #+PLOT: title:"Citas" ind:1 deps:(3) type:2d with:histograms set:"yrange [0:]"
+ | Sede      | Max cites | H-index |
+ |-----------+-----------+---------|
+ | Chile     |    257.72 |   21.39 |
+ | Leeds     |    165.77 |   19.68 |
+ | Sao Paolo |     71.00 |   11.50 |
+ | Stockholm |    134.19 |   14.33 |
+ | Morelia   |    257.56 |   17.67 |
+
+** Dates
+   Inserting and keeping track of dates is a new thing to me for OrgMode, but I have seen plenty of examles
+which show that tracking things inside OrgMode can be quite rewarding.
+
+#+BEGIN_SRC
+   DEADLINE: <2021-05-10 Mon>
+<2021-05-10 Mon>
+#+END_SRC
+
+** src code
+
+   Adding source code and its output just makes for really great blogging.
+   The idea of having both with less copy+paste is much better in my
+   opinion.
+
+   #+BEGIN_SRC
+    \#+BEGIN_SRC python :results output
+      def hello_world():
+        return "Make a better hello world example"
+
+      response = hello_world()
+
+      print(response)
+    \#+END_SRC
+
+    \#+RESULTS:
+    : Make a better hello world example
+   #+END_SRC
+
+** Reveal.js
+   Exporting this post to a Reveal.js presentation could not be more simple. Yes, it makes an html file.
+   Add some reveal.js and you have a really great show to put on. Just add the following to the properties
+   section and download the [https://revealjs.com/installation/][Reveal.js]
+
+   #+BEGIN_SRC
+   #+REVEAL_ROOT: file://./assets/reveal.js-master
+   #+END_SRC
+
+** Formating
+
+   Oh where oh where do I begin? We have all the things that you =could= _possibly_ /think/ of _/and then/_
+   some more.
+
+   The radius of the sun is R_sun = 6.96 x 10^8 m.  On the other hand,
+   the radius of Alpha Centauri is R_{Alpha Centauri} = 1.28 x R_{sun}.
+
+   Pro tip: Given a circle \Gamma of diameter d, the length of its
+   circumference is \pi{}d.
+
+   - terms :: are just a nice way to give organization
+
+   Lets show off some images too.
+
+   #+CAPTION: This is the caption for the next figure link (or table)
+   #+NAME:   fig:SED-HR4049
+   [[featured.jpg]]
+
+   Keep going? What about captions??
+
+   #+CAPTION: This is the caption for the next table (or link)
+    | First Name | Last Name |
+    |------------+-----------|
+    | Mr.        | Anderson  |
+    | Captain    | America   |
+    | Bruce      | Banner    |
+
+** Quotes
+
+   Finally, quotes. This almost everything you can do with OrgMode and formatting with
+   Hugo, which really shows most popular things that I would use to write content.
+
+   #+BEGIN_QUOTE
+   Everything should be made as simple as possible,
+   but not any simpler ---Albert Einstein
+   #+END_QUOTE
+
+** Conclusions
+
+   OrgMode is amazing. Collapsing trees, moving them around is also
+   possible. OrgBabble is a whole other world of possible actions
+   that allow for running code in multiple languages that are available
+   on the host of the document.
+
+   Making this document has been really lots of fun to explore what
+   is possible.
+
+   Looking forward to more in the Org world.

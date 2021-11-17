@@ -109,19 +109,16 @@ if they own any currently. Then I would go by this ranking of priority to get fi
 1. You can record almost any fx, isolation, or transition of a knob during performance (this helps finalize some fun)
 1. Backing up your PO is simple, just have to lookup in the manual how to do it
 
+## Manuals
 
-## PO-12
+### PO-12
 
 [PO-12 rhythm Manual](https://teenage.engineering/guides/po-12/en)
 
-....
-
-## PO-33
+### PO-33
 
 [PO-33 K.O. Manual](https://teenage.engineering/guides/po-33/en)
 
-....
-
-## PO-32
+### PO-32
 
 [PO-32 tonic manual](https://teenage.engineering/guides/po-32/en)
