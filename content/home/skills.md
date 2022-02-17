@@ -20,7 +20,7 @@ subtitle = ""
   icon = "python"
   icon_pack = "fab"
   name = "Python"
-  description = "40%"
+  description = "60%"
 
 [[feature]]
   icon = "Clojure_logo"
