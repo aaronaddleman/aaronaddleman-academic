@@ -40,6 +40,23 @@ pipenv install package-name
 pipenv install dev-tool --dev
 ```
 
+## Version not found
+
+This usually means you just need to update pyenv. Upgrading pyenv is really easy when you are using the method of installing from the git repo. This is the main reason why I dont use `brew install pyenv` but rather just use the git clone to your `~/.pyenv` directory.
+
+To upgrade:
+
+```shell
+cd ~/.pyenv
+git pull origin master
+```
+
+Once this is done, you should see updated list of versions available to install when running:
+
+```shell
+pyenv install --list
+```
+
 ## What I found
 
 Over time I have gathered these possible solutions to fixing some issues with `Pipenv`.
