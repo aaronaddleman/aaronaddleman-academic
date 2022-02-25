@@ -17,6 +17,9 @@ type: book  # Do not modify.
 # - weight: Position of link in menu.
 ---
 
+
+## splitting the config
+
 Gitconfig is a interesting file when you are able to use an if statement based on the directory of a project. Below is my tree for projects that both define
 personal and professional configurations. This allows me
 
@@ -54,3 +57,13 @@ gpgSign = true
 
 The other file of `$HOME/.gitconfig-work` shares the same name, but a different email address. This helps
 automatically set the Name and Email settings for git projects based on the top level directory they reside within.
+
+## aliases
+
+Sometimes its needed to have some handy aliases to do git actions. Two of them I have been using is the reset from origin and reset from upstream:
+
+```
+[alias]
+resetorigin = !git fetch origin && git reset --hard origin/${1-main} && git clean -f -d
+resetupstream = !git fetch upstream && git reset --hard upstream/${1-main} && git clean -f -d
+```
