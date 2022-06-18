@@ -46,3 +46,5 @@ This is by far the most popular command I use by invoking `SPC #` where the `#` 
 This mode is fantastic. Using `SPC w .` brings up a large list of commands that are available at your finger tips and broken up to categories. These are:  select, move, split resize, other. Most of the time I use this mode for resizing a window by using `{` and `}`.
 
 ### Frames
+
+These are great for splitting up projects and focus to another OS window (not to be confused with Windows in Emacs). The really great thing about this is that you can target the windows in other frames with using the `SPC #` command. This is super helpful when having the Frames in full screen mode.
