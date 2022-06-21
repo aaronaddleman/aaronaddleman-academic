@@ -41,6 +41,13 @@ If I want more options, I usually default to the "windows transient" mode where 
 #### Selecting windows
 
 This is by far the most popular command I use by invoking `SPC #` where the `#` is a single number ranging from `0` to `9`.
+
+### Max/Restore
+
+Sometimes a window is too small for reading or its dimensions are just too small for the output you have just produced. You want to see the entire thing, but you dont want this view to be permanent.
+
+Use `SPC w m` to maximize the window and now you can see more of the content. After you are done, you just run `SPC w m` to restore the window to its previous size.
+
 ### Windows Transient
 
 This mode is fantastic. Using `SPC w .` brings up a large list of commands that are available at your finger tips and broken up to categories. These are:  select, move, split resize, other. Most of the time I use this mode for resizing a window by using `{` and `}`.
@@ -48,3 +55,9 @@ This mode is fantastic. Using `SPC w .` brings up a large list of commands that 
 ### Frames
 
 These are great for splitting up projects and focus to another OS window (not to be confused with Windows in Emacs). The really great thing about this is that you can target the windows in other frames with using the `SPC #` command. This is super helpful when having the Frames in full screen mode.
+
+To make a new frame use `SPC F n`.
+
+## Buffers
+
+A buffer is a file or space that is stored in memory which represents something you can interact with in Emacs. You will have many buffers open over the course of using Emacs or Spacemacs.
