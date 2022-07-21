@@ -78,6 +78,7 @@ I also had to add the `~/.emacs-installs/doom-emacs/bin` path to my `$PATH` shel
 ### git (magit)
 
 Spacemacs: `SPC g s`
+
 Doom: `SPC g g`
 
 The rest of magit is the same, so nothing really note worthy.
@@ -85,9 +86,11 @@ The rest of magit is the same, so nothing really note worthy.
 ### frame navigation
 
 Spacemacs: `SPC #`
+
 Doom: `SPC w [h,j,k,l]`
 
 ### quick jumping
 
 Spacemacs: `SPC j j [them type letters]`
+
 Doom: `g s SPC [then type letters ]`
