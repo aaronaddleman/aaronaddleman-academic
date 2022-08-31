@@ -15,3 +15,5 @@ To make this script you can do the following:
 1. Run the script
 1. Choose the application that is running for dumping properties
 1. Choose the output you want to receive for showing the data
+
+More content
