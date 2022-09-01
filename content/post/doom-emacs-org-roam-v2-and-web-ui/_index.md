@@ -75,4 +75,7 @@ To capture a new node start with `SPC n r n` for running the command `org-roam-c
 You have also have the following options at the top of this buffer that allow you to `Finish`, `Refile`, or `Abort`.
 
 - Finish allows you complete the newly created node. This is a one time option that comes up only for new nodes. When you edit a node, this option does not show up.
-- Refile
+- Refile will relocate a file from an entry based template.
+- Abort cancels the capture and does not create the file. You will get prompted to provide a yes or no as your final answer to execute this action.
+
+Now you can write your note!
