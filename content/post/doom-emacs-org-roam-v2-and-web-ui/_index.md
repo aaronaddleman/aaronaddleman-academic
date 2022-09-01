@@ -35,6 +35,9 @@ This is what I use for my config, but really all you need to get org roam v2 wor
 * Update `config.el` with the following:
 
 ```lisp
+;; set your location of notes
+;; make sure also to make a directory of ./roam
+(setq org-directory "~/src/github.com/org-roam-notes/")
 ;; From https://github.com/org-roam/org-roam-ui#doom
 (use-package! websocket
   :after org-roam
@@ -51,6 +54,25 @@ This is what I use for my config, but really all you need to get org roam v2 wor
 (package! org-roam-ui)
 ```
 
-This allows Doom to subscribe to the latest version of org-roam and include some great features. Most of the time Doom has a pinned version. This is the place where things could possibly go wrong if somethign is not compatible, but I have not had an issue so far for a while.
+This allows Doom to subscribe to the latest version of org-roam and include some great features. Most of the time Doom has a pinned version. This is the place where things could possibly go wrong if something is not compatible, but I have not had an issue so far for a while.
 
-Now you just need to run a `doom sync` and relaunch.
+Now you just need to run a `doom sync` and re-launch.
+
+## Quick Intro to capturing
+
+Now lets get on with the capturing of information! Searching by far will usually be the most popular one but you don't have anything to search if you are starting with a new repository. So, lets get into capturing and then we can move on to searching.
+
+To capture a new node start with `SPC n r n` for running the command `org-roam-capture`. A new buffer should come up with the following:
+
+```markdown
+:PROPERTIES:
+:ID:       0c713e22-2517-4a0f-aedb-175c1eb016a0
+:END:
+#+title: New Node
+
+```
+
+You have also have the following options at the top of this buffer that allow you to `Finish`, `Refile`, or `Abort`.
+
+- Finish allows you complete the newly created node. This is a one time option that comes up only for new nodes. When you edit a node, this option does not show up.
+- Refile
