@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
 
-hugo server --disableFastRender --i18n-warnings
+hugo mod clean
+hugo mod get -u ./...
+hugo server --disableFastRender --buildDrafts
