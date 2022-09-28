@@ -32,7 +32,7 @@ Open your `.doom.d/init.el` file and add this:
 
 ```
 
-## Preparing a python version
+### Preparing a python version
 
 First, select the version you want to use and get it installed:
 
@@ -50,7 +50,7 @@ pip install poetry
 pip install pylint
 ```
 
-## Making a Python project
+### Making a Python project
 
 ```
 mkdir project_name
@@ -61,7 +61,7 @@ poetry init
 # make sure to add pytest of at least version 1.2.0
 ```
 
-## Running things with poetry
+### Running things with poetry
 
 Basic running of your code inside poetry is done with:
 
