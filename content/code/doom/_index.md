@@ -74,3 +74,23 @@ or
 ```
 poetry run the_command --with-args
 ```
+
+## Projects
+
+### Add a project in Doom
+
+```
+SPC p a
+```
+
+then find the folder you want to add. Best that it be a git directory!
+
+### Closing a project
+
+Reasons for closing a project are to re-evaluate the settings picked up by major or minor modes:
+
+```
+SPC p k
+```
+
+This will kill all the buffers under the project and hope you have everything saved.
