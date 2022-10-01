@@ -15,11 +15,22 @@ The GoLang, Go, or Go Language, is a very nice language used by many projects. S
 
 ## Articles
 
+[Effective Go](https://golang.org/doc/effective_go#introduction)
+: Made by the people who maintain GoLang, this page has tons of patterns and notes about how to write.. well... effective go code.
+
 [Rob Pike interview for Evrone: "Go has become the language of cloud infrastructure"](https://evrone.com/rob-pike-interview)
+: An interview about GoLang becoming the language of the cloud infrastructure.
 
 [Bugs](https://www.dolthub.com/blog/2021-09-03-golang-time-bugs/)
+: These things are worth learning to become faster at resolving issues.
 
 ## Tools
+
+### Documentation
+
+Go is really amazing at the documents its providing. You can go through the source code at the url below and not only is it the full syntax of the DSL but you also have working examples that you can execute and add your own experiments right inside the webpage!
+
+[ComplexNumbers](https://pkg.go.dev/go/constant@go1.17.2#example-package-ComplexNumbers)
 
 ### Tracing
 
@@ -39,7 +50,7 @@ I like to stay away from global installs of my tools and this is another one of 
 
 ### Quality
 
-[Go Report Card | Go project code quality report cards](https://goreportcard.com/)
+[Go Report Card](https://goreportcard.com/)
 
 ## Setup
 

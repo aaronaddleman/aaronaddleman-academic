@@ -8,6 +8,13 @@ toc: true  ## Show table of contents? true/false
 type: book
 ---
 
+
+## Installation
+
+Best done with `goenv` and the Libsh project handles this to a function for making this easier to manage. Here are some things below to remember when taking on this task:
+
+1. If you install a version with `goenv install #.#.#` and go is not available there is a good chance that the architecture for the version desired was not found. Best to find a new or later version that supports the architecture you are using.
+
 ## Making a project
 
 ```
