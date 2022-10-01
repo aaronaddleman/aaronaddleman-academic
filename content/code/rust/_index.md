@@ -8,6 +8,10 @@ type: book
 summary: "My notes things about Rust"
 ---
 
+I have found so many examples of utilities that use Rust. Then I found a video about how Rust could possibibly be the future language
+for the cloud. Then my programming ears and gears perked up and then next thing I knew, I was writing this content for myself to learn
+about Rust.
+
 ## Docs
 
 When adding a library to the `Cargo.toml` and running `cargo build` to install its version you need, you can generated its docs with the following:

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Using Org Mode in Hugo</title>
+<meta name="author" content="Aaron Addleman"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="file://./assets/reveal.js-master/dist/reveal.js/css/reveal.css"/>
+
+<link rel="stylesheet" href="file://./assets/reveal.js-master/dist/reveal.js/css/theme/black.css" id="theme"/>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'file://./assets/reveal.js-master/dist/reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide">
+<h1 class="title">Using Org Mode in Hugo</h1><h2 class="author">Aaron Addleman</h2><h2 class="date">2021-05-10</h2><p class="date">Created: 2021-09-03 Fri 16:42</p>
+</section>
+<section id="table-of-contents-section">
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#/slide-1">1. OrgMode Blogging</a>
+<ul>
+<li><a href="#/slide-1-1">1.1. Frontmatter</a></li>
+<li><a href="#/slide-1-2">1.2. Why do it?</a></li>
+<li><a href="#/slide-1-3">1.3. Tables</a></li>
+<li><a href="#/slide-1-4">1.4. Dates</a></li>
+<li><a href="#/slide-1-5">1.5. Reveal.js</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</section>
+
+<section>
+<section id="slide-1">
+<h2 id="1"><span class="section-number-2">1.</span> OrgMode Blogging</h2>
+<p>
+  This is the best thing I have seen in a really long time with regards to OrgMode and blogging. I have
+tried many thing things in the past with OrgMode and posting articles to various services which usually they end up breaking, getting
+deprecated, or are just confusing. This is simple. Make an <b>_index.org</b> file with some frontmatter at
+the top and you are good to go!
+</p>
+
+</section>
+<section id="slide-1-1">
+<h3 id="1-1"><span class="section-number-3">1.1.</span> Frontmatter</h3>
+<p>
+   Here is the example frontmatter of this document that sets some basic fields that are similar
+to the markdown frontmatter.
+</p>
+<pre class="example">
+#+title: Using Org Mode in Hugo
+#+summary: Take back blog power with OrgMode in Emacs
+#+subtitle: emacs everywhere
+#+date: 2019-08-02
+#+draft: true
+#+tags[]: howto
+</pre>
+
+</section>
+<section id="slide-1-2">
+<h3 id="1-2"><span class="section-number-3">1.2.</span> Why do it?</h3>
+<p>
+   Eazy. OrgMode brings lots of features to editing notes in a text format. Can make a very easy argument
+about how text files will be supported for ever. This is the same for MarkDown, but OrgMode has way more
+features geared towards making outlines, tasks, links, topics, and even executing code to insert the results
+within the document. Oh and its just super fun. The organization tools of OrgMode&#x2026; to blog? How could you
+turn that down?
+</p>
+
+</section>
+<section id="slide-1-3">
+<h3 id="1-3"><span class="section-number-3">1.3.</span> Tables</h3>
+<p>
+Lets show of some tables. I just absolutly love how OrgMode makes composing tables so easy.
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption class="t-above"><span class="table-number">Table 1:</span> This is my caption</caption>
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Key</th>
+<th scope="col" class="org-left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">1,2</td>
+<td class="org-left">Jim Butters was here</td>
+</tr>
+</tbody>
+</table>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Sede</th>
+<th scope="col" class="org-right">Max cites</th>
+<th scope="col" class="org-right">H-index</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Chile</td>
+<td class="org-right">257.72</td>
+<td class="org-right">21.39</td>
+</tr>
+
+<tr>
+<td class="org-left">Leeds</td>
+<td class="org-right">165.77</td>
+<td class="org-right">19.68</td>
+</tr>
+
+<tr>
+<td class="org-left">Sao Paolo</td>
+<td class="org-right">71.00</td>
+<td class="org-right">11.50</td>
+</tr>
+
+<tr>
+<td class="org-left">Stockholm</td>
+<td class="org-right">134.19</td>
+<td class="org-right">14.33</td>
+</tr>
+
+<tr>
+<td class="org-left">Morelia</td>
+<td class="org-right">257.56</td>
+<td class="org-right">17.67</td>
+</tr>
+</tbody>
+</table>
+
+</section>
+<section id="slide-1-4">
+<h3 id="1-4"><span class="section-number-3">1.4.</span> Dates</h3>
+<p>
+   Inserting and keeping track of dates is a new thing to me for OrgMode, but I have seen plenty of examles
+which show that tracking things inside OrgMode can be quite rewarding.
+</p>
+
+<pre class="example">
+   DEADLINE: &lt;2021-05-10 Mon&gt;
+&lt;2021-05-10 Mon&gt;
+</pre>
+
+</section>
+<section id="slide-1-5">
+<h3 id="1-5"><span class="section-number-3">1.5.</span> Reveal.js</h3>
+<p>
+Exporting this post to a Reveal.js presentation could not be more simple.
+</p>
+</section>
+</section>
+</div>
+</div>
+<script src="file://./assets/reveal.js-master/dist/reveal.js/lib/js/head.min.js"></script>
+<script src="file://./assets/reveal.js-master/dist/reveal.js/js/reveal.js"></script>
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: 'c',
+rollingLinks: false,
+keyboard: true,
+mouseWheel: false,
+fragmentInURL: false,
+hashOneBasedIndex: false,
+pdfSeparateFragments: true,
+overview: true,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'convex', // see README of reveal.js for options
+transitionSpeed: 'default',
+
+// Optional libraries used to extend reveal.js
+dependencies: [
+ { src: 'file://./assets/reveal.js-master/dist/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'file://./assets/reveal.js-master/dist/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'file://./assets/reveal.js-master/dist/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'file://./assets/reveal.js-master/dist/reveal.js/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'file://./assets/reveal.js-master/dist/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } }]
+
+});
+</script>
+</body>
+</html>

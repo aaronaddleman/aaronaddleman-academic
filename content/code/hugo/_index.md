@@ -86,6 +86,13 @@ What the fields mean:
 
 ---
 
+### book
+
+```shell
+hugo new --kind book code/book-name/_index.md
+hugo new --kind book code/book-name/section_name.md
+```
+
 ### project
 
 Summarizing a project is great for gathering multiple posts under one goal. By summarizing the project
