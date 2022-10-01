@@ -1,17 +1,10 @@
 ---
-title: Compilation problems 
+title: Compilation problems
 linktitle: Compilation Problems
 toc: true
-type: docs
+type: book
 date: "2020-11-07T03:37"
 draft: false
-menu:
-  java:
-    parent: errors
-    weight: 1
-
-# Prev/next pager order (if `docs_section_pager` enabled in `params.toml`)
-weight: 1
 ---
 
 ## Error

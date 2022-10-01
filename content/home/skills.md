@@ -20,7 +20,7 @@ subtitle = ""
   icon = "python"
   icon_pack = "fab"
   name = "Python"
-  description = "40%"
+  description = "60%"
 
 [[feature]]
   icon = "Clojure_logo"
@@ -81,6 +81,12 @@ subtitle = ""
   icon_pack = "custom"
   name = "Elixir"
   description = "2%"
+
+[[feature]]
+  icon = "rust-lang-icon"
+  icon_pack = "custom"
+  name = "Rust"
+  description = "0%"
 
 
 

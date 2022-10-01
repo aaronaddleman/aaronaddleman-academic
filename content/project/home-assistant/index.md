@@ -68,6 +68,24 @@ Hope to use in the near future:
 * Node-Red
 * Z-Wave JS
 
+### Home Assistant
+
+Installing this program is super easy and comes with two methods that are listed [on the home assistant webpage of installation methods.](https://www.home-assistant.io/installation/raspberrypi/#install-home-assistant-operating-system "Home Assistant installation methods").
+
+I went with the [Home Assistant operating system](https://www.home-assistant.io/installation/raspberrypi/#install-home-assistant-operating-system "Home Assistant Operating system installation instructions") because it was straight forward as compared to the docker container which does require knowledge about Docker.
+
+After I got the installation done, I explored the following things:
+
+#### Integrations
+
+This thing was full of stuff it found on my network that took little to no time in setup. Just some reading of text and some clicks and I got my printer ink levels automatically.
+
+Other things like Google Nest were super involved and it was really helpful to have knowledge of Cloud infrastructure to navigate around with confidence.
+
+#### Dashboards
+
+It comes with a default dashboard that has everything populated. If you make your own, I think it says it will remove it and then you have ability to customize it all you want. Dont worry about this as adding cards is very simple and you will figure it out really fast.
+
 ### ESPHome
 
 This thing is so awsome. I have about 5 units of the [Feather Huzzah esp8266](https://www.adafruit.com/product/2821) which are super small and come in at a very good price.
@@ -135,7 +153,7 @@ Home Assistant for vewing:
 
 <link to file of dashboard with all sensors>
 
-### Home Panel
+#### Home Panel
 
 This one has been a hit and miss for me. While I understand that this is really meant for a small dashboard control panel
 on your wall or touch device, I tried it for my TV display and it was not the best. This had +/- reasons and they are:
@@ -181,6 +199,12 @@ Use the scripts below to login, move the mouse pointer, and click on elements.
 
 ### Sending keyboard commands:
 
+I made this shell script to do auto login of the webpage with a guest account and to auto reload the webpage with some keyboards.
+
+Do do this, I logged into my Raspberry Pi, created the following scripts and add them to a crontab file to be run on a schedule.
+
+#### Autologin script
+
 ```
 pi@raspberrypi:~ $ cat autologin.sh
 export XAUTHORITY=/home/pi/.Xauthority; export DISPLAY=:0; xdotool type guest
@@ -194,12 +218,18 @@ sleep 5
 export XAUTHORITY=/home/pi/.Xauthority; export DISPLAY=:0; xdotool key Return
 ```
 
+#### Autostay logged in
+
+This will place a check box for the option "keep me logged in"
+
 ```
 pi@raspberrypi:~ $ cat autostaylogin.sh
 export XAUTHORITY=/home/USERNAME/.Xauthority; export DISPLAY=:0; xdotool mousemove 1260 713
 sleep 5
 export XAUTHORITY=/home/USERNAME/.Xauthority; export DISPLAY=:0; xdotool click 1
 ```
+
+#### Set zoom level
 
 ```
 pi@raspberrypi:~ $ cat autozoomout.sh
@@ -210,12 +240,12 @@ sleep 5
 export XAUTHORITY=/home/USERNAME/.Xauthority; export DISPLAY=:0; xdotool keyup Control_L Shift_L
 ```
 
-### crontab refresh
+#### crontab refresh
 
 Turn on logging for cron
 
 ```
-vim /etc/rsyslog.conf
+cat /etc/rsyslog.conf
 cron.*      /var/log/cron.log
 ```
 
@@ -296,4 +326,3 @@ This card is best viewed on a dark-themed dashboard as I have white for the text
 
 ![clock_and_date.png](/media/homeassistant_clock_and_date.png)
 
-##

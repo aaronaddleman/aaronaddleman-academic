@@ -7,7 +7,7 @@ authors: []
 tags: ["music"]
 categories: []
 date: 2020-11-19T13:03:52-08:00
-draft: true
+draft: false
 
 # Optional external URL for project (replaces project detail page).
 external_link: ""
@@ -47,11 +47,13 @@ So far I have done some simple works on the OP-1. I have found the flow sometime
 just making music. One thing I really like to do with the OP-1 is to generate samples from the various engines. Other times, I like to take
 samples of various sounds with a recorder I purchased.
 
-## songs
+## playlists
 
-<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1166143747&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/nineboots" title="nineboots" target="_blank" style="color: #cccccc; text-decoration: none;">nineboots</a> · <a href="https://soundcloud.com/nineboots/sets/op1" title="op1" target="_blank" style="color: #cccccc; text-decoration: none;">op1</a></div>
+<iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1166143747&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/nineboots" title="nineboots" target="_blank" style="color: #cccccc; text-decoration: none;">nineboots</a> · <a href="https://soundcloud.com/nineboots/sets/op1" title="op1" target="_blank" style="color: #cccccc; text-decoration: none;">op1</a></div>
 
 ## hardware
+
+Here is the list of hardware I tend to bounce back and forth between. The H4N Recorder was a little pricy for me, but it has its strengths for recording tons of things. Most of the time I used it to record samples and then bring them over to the OP1 or use it as a disk to save backups of my songs while I am out on the field and away from my desk or computer.
 
 1. OP-1
 1. Apple iPad Pro
@@ -60,10 +62,8 @@ samples of various sounds with a recorder I purchased.
 
 ## software
 
-### op1 patches
-
-### ipad pro
-
 ### mac
+
+Came across this program for the macOS to run some simple audio tasks. Nothing fancy but its good price and set of features for free:
 
 [ocenaudio](https://www.ocenaudio.com/)

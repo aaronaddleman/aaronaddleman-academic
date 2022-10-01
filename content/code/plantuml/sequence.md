@@ -2,17 +2,10 @@
 title: Sequence
 linktitle: Sequence
 toc: true
-type: docs
+type: book
 tags: []
 date: "2020-11-07T07:28:00Z"
 draft: false
-menu:
-  plantuml:
-    parent: Plantuml
-    weight: 1
-
-# Prev/next pager order (if `docs_section_pager` enabled in `params.toml`)
-weight: 1
 ---
 
 Used mostly for describing the process of a GET or POST verbs of a project.
