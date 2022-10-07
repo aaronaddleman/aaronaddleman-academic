@@ -94,3 +94,17 @@ SPC p k
 ```
 
 This will kill all the buffers under the project and hope you have everything saved.
+
+
+## Editing
+
+### Mass file changes
+
+Below are the key commands in order to make mass edits across multiple files along with a description of what the key command is trying to do. Follow them in order and you can do a massive search and replace of text.
+
+- `SPC s p` Search across the project for the text pattern to be modified
+- `C-;` This implements a "right click" menu where you want to get options based on the search you are running
+- `E` Invokes the embark option to export the search for modification
+- `C-c C-p` This makes the buffer be able to be updated
+-  Now you can make your edits all you want. I like to sometimes use `:%s/pattern/replace/g` or other times, I just made edits where I see the need to do so.
+- `Z Z` Save all the changes to every file updated.
