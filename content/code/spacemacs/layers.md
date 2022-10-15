@@ -113,15 +113,4 @@ and this pulled in all the settings about `goenv`.
 ```
 
 
-
-
-
-
-
-
-
-
-
-
-
 ### org-mode
