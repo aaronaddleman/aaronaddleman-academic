@@ -89,10 +89,8 @@ Spacemacs: `SPC #`
 
 Doom: `SPC w [h,j,k,l]`
 
-~~I find this to be the most annoying thing in Doom and the thing I miss from Spacemacs. Still on the lookout for how to do this better in Doom as I have hope there is an answer.~~ Okay! Found the answer and so much more. In fact, I am just going to dedicate a whole section to just this menu I call the `g` menu.
-
 ### quick jumping
 
 Spacemacs: `SPC j j [them type letters]`
 
-Doom: `g s SPC [then type letters ]`
+Doom: `g s SPC [then type letters]`
