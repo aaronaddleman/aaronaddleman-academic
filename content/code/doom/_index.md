@@ -75,6 +75,23 @@ or
 poetry run the_command --with-args
 ```
 
+### Debugging Python with DAP
+
+These packages need to be installed at the global level of your Python version. This information was taken from https://docs.doomemacs.org/latest/modules/tools/debugger/.
+
+* Its recommeded to use this one
+
+```
+pip install debugpy --user
+```
+
+* This one is the default and I am including it here for infomation purpose
+
+```
+# this is the default
+pip install ptvsd --user
+```
+
 ## Projects
 
 ### Add a project in Doom
